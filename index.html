@@ -1,0 +1,2191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market-Place</title>
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- accordion cdn  -->
+
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="./tailwind.config.js"></script>
+
+    <!-- custom CSS -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icons/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/btn.css">
+
+
+</head>
+
+<body>
+    <!-- offcanvas start -->
+    <div class="tp-offcanvas-area">
+        <div class="tp-offcanvas-wrapper">
+            <div class="tp-offcanvas-header flex items-center justify-between">
+                <div class="tp-offcanvas-logo">
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/logo/header-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="tp-offcanvas-close flex items-center justify-center">
+                    <div class="common-btn">
+                        <button
+                            class="text-base font-medium text-primary h-10 w-10 flex items-center gap-4 justify-center !bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.33)_100%)]"><i
+                                class="fa-solid fa-xmark !text-white"></i>
+                            <span class="border-anim !p-[2px]"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="common-btn rs-buy-now-btn ml-0 mr-0 llg:ml-auto llg:mr-2 md:ml-auto md:mr-2 lg:ml-0 lg:mr-0">
+                <button class="text-base font-medium text-primary h-12 px-6">Buy Now <span class="border-anim"></span>
+                </button>
+            </div>
+            <div class="rs-main-menu  d-lg-none mb-[80px]">
+                <nav class="tp-mobile-menu-active">
+                    <ul class="">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Feature <img src="./assets/img/icons/angle-down-small.svg" alt=""></a>
+                            <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="./assets/img/icons/dropdown-05.svg"
+                                                alt="">
+                                        </i>
+                                        Website
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="./assets/img/icons/dropdown-04.svg"
+                                                alt="">
+                                        </i>
+                                        User App
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="./assets/img/icons/dropdown-03.svg"
+                                                alt="">
+                                        </i>
+                                        Admin panel
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services <img src="./assets/img/icons/angle-down-small.svg" alt=""></a>
+                            <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="./assets/img/icons/dropdown-02.svg"
+                                                alt="">
+                                        </i>
+                                        Installation & Publication
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="./assets/img/icons/dropdown-01.svg"
+                                                alt="">
+                                        </i>
+                                        Customizations
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Support & Help <img src="./assets/img/icons/angle-down-small.svg" alt=""></a>
+                            <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="./assets/img/icons/dropdown-01.svg"
+                                                alt="">
+                                        </i>
+                                        Installation Service
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="./assets/img/icons/dropdown-01.svg"
+                                                alt="">
+                                        </i>
+                                        Customizations
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="./assets/img/icons/dropdown-01.svg"
+                                                alt="">
+                                        </i>
+                                        Documentation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="./assets/img/icons/dropdown-01.svg"
+                                                alt="">
+                                        </i>
+                                        Support Ticket
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative !justify-center"
+                                        href="#">
+                                        All Product
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Demo</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="tp-offcanvas-info mb-12">
+                <h3 class="tp-offcanvas-info-title mb-15">
+                    information
+                </h3>
+                <span>
+                    <a href="tel:+8801937203743">
+                        +8801937203743
+                    </a>
+                </span>
+                <span>
+                    <a href="mailto:razinsoftltd@gmail.com">
+                        razinsoftltd@gmail.com
+                    </a>
+                </span>
+                <span>
+                    <a href="javascript:void(0)">
+                        7240 Wentworth Road Valdosta, GA 31601
+                    </a>
+                </span>
+            </div>
+            <div class="tp-offcanvas-social">
+                <h3 class="tp-offcanvas-social-title mb-4">
+                    follow us
+                </h3>
+                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="tp-offcanvas-overlay"></div>
+    <!-- offcanvas end -->
+
+
+    <!-- HEADER -->
+    <header id="demo"
+        class="rs-header-area max-w-2lg mx-auto flex items-center justify-between py-[24px] absolute top-0 left-0 right-0 z-[99] px-4">
+        <div class="rs-header-logo">
+            <a href="#"><img src="./assets/img/logo/header-logo.png" alt=""></a>
+        </div>
+
+        <div class="rs-main-menu hidden xl:block">
+            <nav>
+                <ul class="flex items-center gap-6">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#feature">Feature<img src="./assets/img/icons/angle-down-small.svg" alt=""></a>
+                        <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="./assets/img/icons/dropdown-05.svg"
+                                            alt="">
+                                    </i>
+                                    Website
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="./assets/img/icons/dropdown-04.svg"
+                                            alt="">
+                                    </i>
+                                    User App
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="./assets/img/icons/dropdown-03.svg"
+                                            alt="">
+                                    </i>
+                                    Admin panel
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#service">Services
+                            <img src="./assets/img/icons/angle-down-small.svg" alt=""></a>
+                        <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="./assets/img/icons/dropdown-02.svg"
+                                            alt="">
+                                    </i>
+                                    Installation & Publication
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="./assets/img/icons/dropdown-01.svg"
+                                            alt="">
+                                    </i>
+                                    Customizations
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Support & Help
+                            <img src="./assets/img/icons/angle-down-small.svg" alt=""></a>
+                        <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="./assets/img/icons/dropdown-01.svg"
+                                            alt="">
+                                    </i>
+                                    Installation Service
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="./assets/img/icons/dropdown-01.svg"
+                                            alt="">
+                                    </i>
+                                    Customizations
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="./assets/img/icons/dropdown-01.svg"
+                                            alt="">
+                                    </i>
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="./assets/img/icons/dropdown-01.svg"
+                                            alt="">
+                                    </i>
+                                    Support Ticket
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative justify-center"
+                                    href="#">
+                                    All Product
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#demo">Demo</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="common-btn rs-buy-now-btn ml-0 mr-0 llg:ml-auto llg:mr-2 md:ml-auto md:mr-2 lg:ml-0 lg:mr-0">
+            <button class="text-base font-medium text-primary h-12 px-6">Buy Now <span class="border-anim"></span>
+            </button>
+        </div>
+        <div class="common-btn offcanvas-show-btn hidden llg:block md:block lg:hidden">
+            <button
+                class="text-base font-medium text-primary w-12 h-12 flex items-center justify-center  rs-offcanvas-btn">
+                <i class="fa-solid fa-bars text-[24px] !text-white"></i>
+                <span class="border-anim"></span>
+            </button>
+        </div>
+    </header>
+
+
+    <main class="min-h-screen ">
+
+        <!-- HERO AREA -->
+        <section
+            class="rs-hero-area pt-[125px] pb-[64px] bg-[url('./assets/img/bg/hero-bg.jpg')] bg-cover bg-center relative">
+            <div class="max-w-2lg mx-auto px-4 flex items-center justify-between">
+                <div class="rs-hero-left">
+                    <div class="rs-hero-content">
+                        <h2 class="sub-title font-normal text-[40px] leading-[117%] mb-1">
+                            Launch Your Own
+                        </h2>
+
+                        <h1 class="title text-6xl font-bold leading-[133%]">Buy & Sell Marketplace</h1>
+                        <p class="text-lg font-normal leading-[140%] text-white mb-8">
+                            A complete OLX-style platform with Website + Android App + Admin Panel. <br> Post ads, chat
+                            instantly, negotiate prices — everything included.
+                        </p>
+                        <div class="rs-hero-btn flex items-center gap-6">
+                            <div class="common-btn">
+                                <button
+                                    class="text-base font-medium text-primary h-12 w-[172px] pl-4 flex items-center gap-4">Buy
+                                    Now <img src="./assets/img/icons/arrow-left.svg" alt="">
+                                    <span class="border-anim"></span>
+                                </button>
+                            </div>
+                            <div class="common-btn-2">
+                                <button
+                                    class="text-base font-medium text-white h-12 w-[172px] pl-4 flex items-center gap-4">View
+                                    Demo<img src="./assets/img/icons/arrow-left-white.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs-hero-right-img relative z-[1]">
+                    <img src="./assets/img/hero/hero-01.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- COUNT -->
+        <!-- <section class="rs-count-area  max-w-2lg mx-auto px-4 pt-[80px] pb-[80px]">
+            <div class="rs-count-top-content flex items-center justify-between mb-8">
+                <h3 class="text-[40px] font-semibold leading-[140%]">
+                    Realize how comprehensive <br>
+                    AlignUI Design System is!
+                </h3>
+                <p class="text-lg font-normal leading-[144%] mt-auto">
+                    Here's a closer look at the numbers that define our <br> design system. See how we measure up!
+                </p>
+            </div>
+            <div class="rs-count-widget flex items-center justify-between p-6 relative">
+                <div class="rs-count-widget-item text-center relative">
+                    <div
+                        class="rs-count-widget-icon w-11 h-11 rounded-full flex items-center justify-center bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.33)_100%)] relative mb-4 ml-auto mr-auto">
+                        <img class="absolute after-svg top-0 left-0" src="./assets/img/icons/after.svg" alt="">
+                        <img class="h-content" src="./assets/img/icons/user-plus.svg" alt="">
+                    </div>
+                    <h4 class="font-normal text-[16px] leading-[150%] text-white opacity-[0.6]">Widgets & Examples</h4>
+                    <span class="text-[32px] font-bold"><i
+                            class="purecounter text-[40px] font-bold not-italic leading-[120%]"
+                            data-purecounter-duration="1" data-purecounter-end="200">200</i>+</span>
+                </div>
+                <div class="rs-count-widget-item text-center relative">
+                    <div
+                        class="rs-count-widget-icon w-11 h-11 rounded-full flex items-center justify-center bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.33)_100%)] relative mb-4 ml-auto mr-auto">
+                        <img class="absolute after-svg top-0 left-0" src="./assets/img/icons/after.svg" alt="">
+                        <img class="h-content" src="./assets/img/icons/user-plus.svg" alt="">
+                    </div>
+                    <h4 class="font-normal text-[16px] leading-[150%] text-white opacity-[0.6]">Widgets & Examples</h4>
+                    <span class="text-[32px] font-bold"><i
+                            class="purecounter text-[40px] font-bold not-italic leading-[120%]"
+                            data-purecounter-duration="1" data-purecounter-end="200">200</i>+</span>
+                </div>
+                <div class="rs-count-widget-item text-center relative">
+                    <div
+                        class="rs-count-widget-icon w-11 h-11 rounded-full flex items-center justify-center bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.33)_100%)] relative mb-4 ml-auto mr-auto">
+                        <img class="absolute after-svg top-0 left-0" src="./assets/img/icons/after.svg" alt="">
+                        <img class="h-content" src="./assets/img/icons/user-plus.svg" alt="">
+                    </div>
+                    <h4 class="font-normal text-[16px] leading-[150%] text-white opacity-[0.6]">Widgets & Examples</h4>
+                    <span class="text-[32px] font-bold"><i
+                            class="purecounter text-[40px] font-bold not-italic leading-[120%]"
+                            data-purecounter-duration="1" data-purecounter-end="200">200</i>+</span>
+                </div>
+                <div class="rs-count-widget-item text-center relative">
+                    <div
+                        class="rs-count-widget-icon w-11 h-11 rounded-full flex items-center justify-center bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.33)_100%)] relative mb-4 ml-auto mr-auto">
+                        <img class="absolute after-svg top-0 left-0" src="./assets/img/icons/after.svg" alt="">
+                        <img class="h-content" src="./assets/img/icons/user-plus.svg" alt="">
+                    </div>
+                    <h4 class="font-normal text-[16px] leading-[150%] text-white opacity-[0.6]">Widgets & Examples</h4>
+                    <span class="text-[32px] font-bold"><i
+                            class="purecounter text-[40px] font-bold not-italic leading-[120%]"
+                            data-purecounter-duration="1" data-purecounter-end="200">200</i>+</span>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- TOTAL PACKAGE -->
+        <section
+            class="rs-total-package-area relative py-[80px] bg-[url('./assets/img/bg/total-package-bg.jpg')] bg-cover bg-center z-[1] overflow-hidden">
+            <div class="max-w-2lg mx-auto px-4">
+                <div class="section-title-wrapper text-center mb-10">
+                    <h2 class="section-title text-5xl font-bold leading-[117%]">
+                        A Total Package
+                    </h2>
+                    <span class="sub-title text-5xl font-bold leading-[117%] text-primary mb-4 block">For Your On
+                        eLearning</span>
+                    <p class="text-lg font-normal leading-[144%]">
+                        Customers can utilize the customer app to conveniently browse products, make purchases, track
+                        orders, and stay <br> updated s, experience and fostering brand loyalty.
+                    </p>
+                </div>
+                <div class="rs-package-box-top w-full flex items-center gap-6 mb-6">
+                    <div class="rs-package-box box overflow-hidden flex items-center p-6 gap-6">
+                        <div class="rs-web-thumb flex-[0_0_auto]">
+                            <a href="#">
+                                <img class="rounded-xl" src="./assets/img/demo/website.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="rs-website-content">
+                            <h2 class="mb-2">
+                                <a class="text-2xl font-bold leading-[133%]" href="#">Website</a>
+                            </h2>
+                            <p class="font-normal text-sm leading-[150%] text-white opacity-[0.6] mb-4">Customers can
+                                utilize the customer app to conveniently browse products, make purchases, track orders,
+                                and stay updateds, experience and fostering brand loyalty.</p>
+                            <div class="common-btn">
+                                <a href="#"
+                                    class="text-base font-medium text-primary h-12 w-[175px] flex items-center justify-center gap-4">Explore
+                                    Demo
+                                    <img src="./assets/img/icons/arrow-left.svg" alt="">
+                                    <span class="border-anim"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rs-package-box box overflow-hidden flex items-center p-6 gap-6">
+                        <div class="rs-web-thumb flex-[0_0_auto]">
+                            <a href="#">
+                                <img class="rounded-xl" src="./assets/img/demo/mobile-app.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="rs-website-content">
+                            <h2 class="mb-2">
+                                <a class="text-2xl font-bold leading-[133%]" href="#">Mobile App</a>
+                            </h2>
+                            <p class="font-normal text-sm leading-[150%] text-white opacity-[0.6] mb-4 ">Customers can
+                                utilize the customer app to conveniently browse products, make purchases, track
+                                orders, and stay updated s, experience and fostering brand loyalty.</p>
+                            <div class="flex items-center gap-4">
+                                <div class="common-btn">
+                                    <a href="#"
+                                        class="text-base font-medium text-primary h-12 w-[147px] flex items-center justify-center gap-4 rs-app-store-btn">
+                                        <img src="./assets/img/icons/app-store.svg" alt="">
+                                        <span class="border-anim"></span>
+                                    </a>
+                                </div>
+                                <div class="common-btn">
+                                    <a href="#"
+                                        class="text-base font-medium text-primary h-12 w-[147px] flex items-center justify-center gap-4 rs-play-store-btn">
+                                        <img src="./assets/img/icons/play-store.svg" alt="">
+                                        <span class="border-anim"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs-package-box box overflow-hidden flex flex-wrap md:flex-nowrap items-center p-6 gap-6">
+                    <div class="rs-web-thumb rs-website-thumb-2 flex-[0_0_auto] !w-[50%]">
+                        <a href="#">
+                            <img class="rounded-xl !w-auto" src="./assets/img/demo/admin-panel.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="rs-website-content">
+                        <h2 class="mb-2">
+                            <a class="text-[40px] llg:text-[30px] sm:text-[24px] font-bold leading-[133%]"
+                                href="#">Admin Panel</a>
+                        </h2>
+                        <p class="font-normal text-[20px] leading-[140%] text-white opacity-[0.6] mb-4 ">Customers can
+                            utilize the customer app to conveniently browse products, make purchases, track
+                            orders, and stay updated s, experience and fostering brand loyalty.</p>
+                        <div class="common-btn">
+                            <a href="#"
+                                class="text-base font-medium text-primary h-12 w-[175px] flex items-center justify-center gap-4">Explore
+                                Demo
+                                <img src="./assets/img/icons/arrow-left.svg" alt="">
+                                <span class="border-anim"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURE -->
+        <section id="feature" class="rs-why-choose-us-area overflow-hidden py-[80px] relative">
+            <div class="max-w-2lg mx-auto px-4">
+                <div class="section-title-wrapper text-center mb-10">
+                    <h2 class="section-title text-5xl font-bold leading-[117%] mb-4">
+                        Key Feature Of Ready MarketPlace
+                    </h2>
+                    <p class="text-lg font-normal leading-[144%]">
+                        Customers can utilize the customer app to conveniently browse products, make purchases, track
+                        orders, and stay <br> updated s, experience and fostering brand loyalty.
+                    </p>
+                </div>
+                <div class="rs-why-choose-us-content flex flex-wrap gap-6 llg:gap-4 justify-center">
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-08.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Modern & User-Friendly Design
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-01.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Multi-Language Support
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-09.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Advanced Search & Filters
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-10.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Real-Time Chat System
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-11.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Secure Payment Gateway
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-12.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Powerful Admin Panel (Laravel)
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-13.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Multi-Vendor Classified System
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-04.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Premium & Featured Ads
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-05.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Location-Based Ads
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-06.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            FCM Push Notifications
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-07.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Ad Safety & Report System
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-07.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Full E-Commerce Compatibility
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-05.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                             Image, Video & Gallery Support
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-06.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            SEO Optimized
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-07.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Easy Installation & Setup
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-07.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Wallet Management
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-05.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Business Analytics Dashboard
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-06.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Role Base Access
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-07.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Theme Customization
+                        </h5>
+                    </div>
+                    <div class="box text-center py-6 w-[334px] llg:w-[300px]">
+                        <div class="icon flex items-center justify-center mb-5">
+                            <img src="./assets/img/icons/choose-icon-07.svg" alt="">
+                        </div>
+                        <h5 class="text-[20px] font-normal leading-[140%]">
+                            Copy Post
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SMS & PAYMENT -->
+        <section class="rs-payment-getaway-area py-[80px]">
+            <div class="max-w-2lg mx-auto px-4">
+                <div class="section-title-wrapper text-center mb-10">
+                    <h2 class="section-title text-5xl font-bold leading-[117%] mb-4">
+                        SMS And Payment Getaway
+                    </h2>
+                    <p class="text-lg font-normal leading-[144%]">
+                        Customers can utilize the customer app to conveniently browse products, make purchases, track
+                        orders, and stay <br> updated s, experience and fostering brand loyalty.
+                    </p>
+                </div>
+                <div class="grid grid-cols-12 gap-10">
+                    <div class="col-span-12 lg:col-span-6">
+                        <div
+                            class="rs-sms-getaway-box linear-bg-border border border-[rgba(244,238,238,0.37)] relative  bg-[rgba(255,255,255,0.04)] p-6 rounded-2xl">
+                            <div
+                                class="rs-sms-getaway-icon flex items-center justify-between gap-4 flex-wrap justify-between mb-4">
+                                <button
+                                    class="h-[80px] linear-bg-border bg-[rgba(255,255,255,0.08)] flex items-center justify-center rounded-lg border border-[rgba(244,238,238,0.37)] relative w-[48%]">
+                                    <img class="w-content h-content" src="./assets/img/icons/sms-04.svg" alt="">
+                                </button>
+                                <button
+                                    class="h-[80px] linear-bg-border bg-[rgba(255,255,255,0.08)] flex items-center justify-center rounded-lg border border-[rgba(244,238,238,0.37)] relative w-[48%]">
+                                    <img class="w-content h-content" src="./assets/img/icons/sms-03.svg" alt="">
+                                </button>
+                                <button
+                                    class="h-[80px] linear-bg-border bg-[rgba(255,255,255,0.08)] flex items-center justify-center rounded-lg border border-[rgba(244,238,238,0.37)] relative w-[48%]">
+                                    <img class="w-content h-content" src="./assets/img/icons/sms-02.svg" alt="">
+                                </button>
+                                <button
+                                    class="h-[80px] linear-bg-border bg-[rgba(255,255,255,0.08)] flex items-center justify-center rounded-lg border border-[rgba(244,238,238,0.37)] relative w-[48%]">
+                                    <img class="w-content h-content" src="./assets/img/icons/sms-01.svg" alt="">
+                                </button>
+                            </div>
+                            <button
+                                class="rs-coming-soon-btn font-normal text-2xl text-primary h-[62px] bg-[rgba(255,255,255,0.08)] rounded-lg w-full">
+                                More Coming Soon<span class="dots"></span>
+                            </button>
+                            <span class="border-b border-[rgba(255,255,255,0.24)] block my-6"></span>
+                            <h3 class="font-medium text-[32px] text-center mb-2">SMS Getaway </h3>
+                            <p class="font-light text-base text-center text-[rgba(255,255,255,0.8)]">ReadyClassify
+                                features an SMS alert system that facilitates customer <br> engagement, order status
+                                updates, order confirmation, and more.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6">
+                        <div
+                            class="rs-payment-getaway-box linear-bg-border border border-[rgba(244,238,238,0.37)] relative  bg-[rgba(255,255,255,0.04)] p-6 rounded-2xl">
+                            <div
+                                class="rs-payment-getaway-icon flex items-center justify-between gap-4 flex-wrap justify-between mb-4">
+                                <button
+                                    class="h-[80px] linear-bg-border bg-[rgba(255,255,255,0.08)] flex items-center justify-center rounded-lg border border-[rgba(244,238,238,0.37)] relative w-[31%]">
+                                    <img class="w-content h-content" src="./assets/img/icons/payment-06.svg" alt="">
+                                </button>
+                                <button
+                                    class="h-[80px] linear-bg-border bg-[rgba(255,255,255,0.08)] flex items-center justify-center rounded-lg border border-[rgba(244,238,238,0.37)] relative w-[31%]">
+                                    <img class="w-content h-content" src="./assets/img/icons/payment-02.svg" alt="">
+                                </button>
+                                <button
+                                    class="h-[80px] linear-bg-border bg-[rgba(255,255,255,0.08)] flex items-center justify-center rounded-lg border border-[rgba(244,238,238,0.37)] relative w-[31%]">
+                                    <img class="w-content h-content" src="./assets/img/icons/payment-04.png" alt="">
+                                </button>
+                                <button
+                                    class="h-[80px] linear-bg-border bg-[rgba(255,255,255,0.08)] flex items-center justify-center rounded-lg border border-[rgba(244,238,238,0.37)] relative w-[31%]">
+                                    <img class="w-content h-content" src="./assets/img/icons/payment-03.svg" alt="">
+                                </button>
+                                <button
+                                    class="h-[80px] linear-bg-border bg-[rgba(255,255,255,0.08)] flex items-center justify-center rounded-lg border border-[rgba(244,238,238,0.37)] relative w-[31%]">
+                                    <img class="w-content h-content" src="./assets/img/icons/payment-05.svg" alt="">
+                                </button>
+                                <button
+                                    class="h-[80px] linear-bg-border bg-[rgba(255,255,255,0.08)] flex items-center justify-center rounded-lg border border-[rgba(244,238,238,0.37)] relative w-[31%]">
+                                    <img class="w-content h-content" src="./assets/img/icons/payment-01.svg" alt="">
+                                </button>
+                            </div>
+                            <button
+                                class="rs-coming-soon-btn font-normal text-2xl text-primary h-[62px] bg-[rgba(255,255,255,0.08)] rounded-lg w-full">
+                                More Coming Soon<span class="dots"></span>
+                            </button>
+                            <span class="border-b border-[rgba(255,255,255,0.24)] block my-6"></span>
+                            <h3 class="font-medium text-[32px] text-center mb-2">Payment Solutions</h3>
+                            <p class="font-light text-base text-center text-[rgba(255,255,255,0.8)]">ReadyClassify has
+                                already integrated several payment solutions, but customers <br> can add different
+                                payment options based on their needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICE -->
+        <section id="pricing" class="rs-price-area relative max-w-2lg mx-auto px-4 py-[80px]">
+            <div class="section-title-wrapper text-center mb-10">
+                <h2 class="section-title text-5xl font-bold leading-[117%]">
+                    Choose The
+                </h2>
+                <span class="sub-title text-5xl font-bold leading-[117%] text-primary mb-4 block">Perfect License For
+                    You</span>
+                <p class="text-lg font-normal leading-[144%]">
+                    Customers can utilize the customer app to conveniently browse products, make purchases, track
+                    orders, and stay <br> updated s, experience and fostering brand loyalty.
+                </p>
+            </div>
+
+            <div class="rs-price-box-wrapper flex items-center justify-center gap-[80px]">
+                <!-- box-1 -->
+                <div class="rs-price-box-items relative rounded-[16px] pt-0 bg-[rgba(255,255,255,0.08)] w-[500px]">
+                    <div class="rs-price-box-head text-center bg-[rgba(255,255,255,0.16)] rounded-t-[16px] px-4 pb-4">
+                        <span
+                            class="text-[10px] font-medium text-black bg-white rounded-b-[8px] py-[3px] px-[26px] inline-block translate-y-[-3px] mb-[6px]">
+                            Start Small But Effective
+                        </span>
+                        <h3 class="text-2xl font-semibold leading-[133%] mb-1">
+                            Regular License
+                        </h3>
+                        <h4 class="text-2xl font-bold leading-[133%] text-primary mb-[22px]">
+                            $299
+                        </h4>
+                        <div class="common-btn-2 w-full">
+                            <button
+                                class="text-base font-semibold text-white h-12 w-full flex items-center gap-4 justify-center !bg-none !bg-[rgba(255,255,255,0.14)]">Purchase
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="rs-price-list px-5 py-6 pb-2">
+                        <ul>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    Lifetime License Validity
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    Permitted for 1 Domain
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    6 months of general and technical support (As per Envato support policy)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    All Premium Features
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    Lifetime FREE Update
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    For Personal Project
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/times-circle.svg" alt="">
+                                    For Commercial Projects [if end product is paid]
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/times-circle.svg" alt="">
+                                    Postman Collection for REST API Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/times-circle.svg" alt="">
+                                    Admin Panel FREE Installation in cPanel [One Time]
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/times-circle.svg" alt="">
+                                    Priority Support
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- box-2 -->
+                <div class="rs-price-box-items-2 relative rounded-[16px] pt-0 bg-[rgba(255,255,255,0.08)] w-[505px]">
+                    <div class="rs-price-box-head text-center bg-[rgba(255,255,255,0.16)] rounded-t-[16px] px-4 pb-4">
+                        <span
+                            class="text-[10px] font-medium !text-[#24262d] bg-white rounded-b-[8px] py-[3px] px-[26px] inline-block translate-y-[-3px] mb-[6px]">
+                            Recommended
+                        </span>
+                        <h3 class="text-2xl font-semibold leading-[133%] mb-1">
+                            Extended License
+                        </h3>
+                        <h4 class="text-2xl font-bold leading-[133%] text-primary mb-[22px]">
+                            $299
+                        </h4>
+                        <div class="common-btn w-full">
+                            <button
+                                class="text-base font-semibold text-white h-12 w-full flex items-center gap-4 justify-center !bg-none !bg-[rgba(221,84,84,0.16)]">
+                                Purchase Now
+                                <span class="border-anim"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="rs-price-list px-5 py-6 pb-2">
+                        <ul>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    Lifetime License Validity
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    Permitted for 1 Domain
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    6 months of general and technical support (As per Envato support policy)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    All Premium Features
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    Lifetime FREE Update
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    For Personal Project
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    For Commercial Projects [if end product is paid]
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    Postman Collection for REST API Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    Admin Panel FREE Installation in cPanel [One Time]
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-start gap-2 font-light text-sm py-3" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="">
+                                    Priority Support
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section class="rs-process-area relative overflow-hidden pt-[80px] pb-[80px]">
+            <div class="max-w-2lg mx-auto px-4">
+                <div class="section-title-wrapper text-center mb-10">
+                    <span class="sub-title text-primary font-medium text-[32px]">How It Works </span>
+                    <h2 class="section-title text-5xl font-semibold leading-[117%] mb-3">
+                        Purchase & Launch Very Easy Steps
+                    </h2>
+                    <p class="text-lg font-normal leading-[144%]">
+                        Build Your Classified Business in Minutes, Launch your ReadyClassify website & apps with zero
+                        hassle — install, <br> configure, publish, and start earning.
+                    </p>
+                </div>
+                <div class="grid grid-cols-12 gap-10">
+                    <div class="col-span-12">
+                        <div
+                            class="rs-process-items rounded-[16px] p-4 shadow-[0_0_16px_0_rgba(0,0,0,0.08)] bg-[rgba(255,255,255,0.08)]  w-[50%] m-auto mb-8 min-h-[230px] flex items-center justify-center">
+                            <div class="rs-process-content text-center">
+                                <div class="rs-process-content-left">
+                                    <div
+                                        class="flex linear-bg-border relative overflow-hidden items-center justify-center rounded-[16px] w-[60px] h-[60px] shadow-[0_0_16px_0_rgba(0,0,0,0.08)] bg-[rgba(255,255,255,0.08)] border border-[rgba(244,238,238,0.37)] ml-auto mr-auto mb-4">
+                                        <span class="font-bold text-[48px] text-[rgba(255,255,255,0.5)]">
+                                            1
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="rs-process-content-right">
+                                    <h3 class="font-bold text-[24px] leading-[133%] mb-2">
+                                        Purchase ReadyClassify from Codecanyon
+                                    </h3>
+                                    <p class="font-normal text-[16px] leading-[150%] text-[rgba(255,255,255,0.6)]">
+                                        Buy the script securely from Codecanyon and download the full source code.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rs-process-center-items w-full flex items-center justify-between gap-8 relative">
+                            <div class="rs-process-shape-1 absolute left-[9%] top-[-85%]">
+                                <img class="shape-1" src="./assets/img/icons/big-arrow-2.svg" alt="">
+                            </div>
+                            <div class="rs-process-shape-2 absolute right-[9%] bottom-[-85%]">
+                                <img class="shape-2" src="./assets/img/icons/big-arrow.svg" alt="">
+                            </div>
+                            <div
+                                class="rs-process-items rs-process-items-center-1 rounded-[16px] p-4 shadow-[0_0_16px_0_rgba(0,0,0,0.08)] bg-[rgba(255,255,255,0.08)] w-[33%] min-h-[230px] flex items-center justify-center">
+                                <div class="rs-process-content text-center">
+                                    <div class="rs-process-content-left">
+                                        <div
+                                            class="flex linear-bg-border relative overflow-hidden items-center justify-center rounded-[16px] w-[60px] h-[60px] shadow-[0_0_16px_0_rgba(0,0,0,0.08)] bg-[rgba(255,255,255,0.08)] border border-[rgba(244,238,238,0.37)] ml-auto mr-auto mb-4">
+                                            <span class="font-bold text-[48px] text-[rgba(255,255,255,0.5)]">
+                                                2
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="rs-process-content-right">
+                                        <h3 class="font-medium text-[24px] leading-[133%] mb-2">
+                                            Install & Configure on Your Server
+                                        </h3>
+                                        <p class="font-normal text-[16px] leading-[150%] text-[rgba(255,255,255,0.6)]">
+                                            Just set up the system on your hosting/server and make sure everything runs
+                                            smoothly.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="rs-process-items rs-process-items-center-2  rounded-[16px] p-4 shadow-[0_0_16px_0_rgba(0,0,0,0.08)] bg-[rgba(255,255,255,0.08)] w-[33%] min-h-[220px] flex items-center justify-center">
+                                <div class="rs-process-content-center relative">
+                                    <div class="rs-process-content text-center">
+                                        <div class="rs-process-content-left">
+                                            <div
+                                                class="flex linear-bg-border relative overflow-hidden items-center justify-center rounded-[16px] w-[60px] h-[60px] shadow-[0_0_16px_0_rgba(0,0,0,0.08)] bg-[rgba(255,255,255,0.08)] border border-[rgba(244,238,238,0.37)] ml-auto mr-auto mb-4">
+                                                <span class="font-bold text-[48px] text-[rgba(255,255,255,0.5)]">
+                                                    3
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="rs-process-content-right w-full">
+                                            <h3 class="font-bold text-[24px] leading-[133%] mb-2">
+                                                Setup Admin Panel
+                                            </h3>
+                                            <p
+                                                class="font-normal text-[16px] leading-[150%] text-[rgba(255,255,255,0.6)] mb-2">
+                                                Configure all essential services:
+                                            </p>
+                                            <ul class="rs-process-list flex flex-wrap gap-4">
+                                                <div
+                                                    class="rs-process-list-items border-right flex flex-col  items-start">
+                                                    <li class="mb-[3px]">
+                                                        <a class="font-normal text-[14px] text-[rgba(255,255,255,0.6)]"
+                                                            href="#">Payment Gateway</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="font-normal text-[14px] text-[rgba(255,255,255,0.6)]"
+                                                            href="#">SMS
+                                                            Gateway</a>
+                                                    </li>
+                                                </div>
+                                                <div class="rs-process-list-items">
+                                                    <li class="mb-[3px]">
+                                                        <a class="font-normal text-[14px] text-[rgba(255,255,255,0.6)]"
+                                                            href="#">FCM, WebSocket & Notifications</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="font-normal text-[14px] text-[rgba(255,255,255,0.6)]"
+                                                            href="#">Website branding & basic settings</a>
+                                                    </li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="rs-process-items rs-process-items-center-3 rounded-[16px] p-4 shadow-[0_0_16px_0_rgba(0,0,0,0.08)] bg-[rgba(255,255,255,0.08)] w-[33%] min-h-[230px] flex items-center justify-center">
+                                <div class="rs-process-content text-center">
+                                    <div class="rs-process-content-left">
+                                        <div
+                                            class="flex items-center linear-bg-border relative overflow-hidden justify-center rounded-[16px] w-[60px] h-[60px] shadow-[0_0_16px_0_rgba(0,0,0,0.08)] bg-[rgba(255,255,255,0.08)] border border-[rgba(244,238,238,0.37)] ml-auto mr-auto mb-4">
+                                            <span class="font-bold text-[48px] text-[rgba(255,255,255,0.5)]">
+                                                4
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="rs-process-content-right">
+                                        <h3 class="font-bold text-[24px] leading-[133%] mb-2">
+                                            Publish Mobile Apps
+                                        </h3>
+                                        <p class="font-normal text-[16px] leading-[150%] text-[rgba(255,255,255,0.6)]">
+                                            Publish your Android app on Google Play Store and the iOS app on the Apple
+                                            App
+                                            Store.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="rs-process-items rounded-[16px] p-4 shadow-[0_0_16px_0_rgba(0,0,0,0.08)] bg-[rgba(255,255,255,0.08)]  w-[50%] m-auto mt-8 min-h-[230px] flex items-center justify-center">
+                            <div class="rs-process-content text-center">
+                                <div class="rs-process-content-left">
+                                    <div
+                                        class="flex items-center linear-bg-border relative overflow-hidden justify-center rounded-[16px] w-[60px] h-[60px] shadow-[0_0_16px_0_rgba(0,0,0,0.08)] bg-[rgba(255,255,255,0.08)] border border-[rgba(244,238,238,0.37)] ml-auto mr-auto mb-4">
+                                        <span class="font-bold text-[48px] text-[rgba(255,255,255,0.5)]">
+                                            5
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="rs-process-content-right">
+                                    <h3 class="font-bold text-[24px] leading-[133%] mb-2">
+                                        Start Earning Revenue
+                                    </h3>
+                                    <p class="font-normal text-[16px] leading-[150%] text-[rgba(255,255,255,0.6)]">
+                                        Once everything is live, your classified website & apps start generating income
+                                        from ads, promotions, memberships, and more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICE -->
+        <section id="service" class="rs-service-area overflow-x-scroll overflow-y-hidden scrollbar-none relative max-w-2lg mx-auto px-4 py-[80px]">
+            <div class="w-full min-w-[1328px]">
+                <div
+                class="rs-service-top flex items-center justify-between p-6 rounded-xl bg-[rgba(221,84,84,0.12)] mb-[14px] gap-10">
+                <div class="rs-service-top-left">
+                    <div class="section-title-wrapper llg:text-center llg:mb-5">
+                        <h2 class="section-title text-[40px] font-semibold leading-[117%] mb-3 llg:mb-1">
+                            Our <br> Installation Services
+                        </h2>
+                        <p class="text-base font-normal leading-[144%]">
+                            You must purchase a license first from CodeCanyon to get these installation plans.
+                        </p>
+                    </div>
+                </div>
+                <div class="rs-service-top-right flex items-center llg:justify-center gap-[16.5px]">
+                    <div
+                        class="rs-service-box llg:flex-[0_0_32%] text-center bg-[rgba(255,255,255,0.14)] p-4 pt-[26px] rounded-[16px] border border-[rgba(244,238,238,0.37)]">
+                        <h3 class="text-2xl font-bold mb-1">Basic</h3>
+                        <p class="text-xs font-normal text-[rgba(255,255,255,0.6)] mb-1">Start Small But Effective.</p>
+                        <h4 class="text-2xl font-bold text-primary mb-5">$299</h4>
+                        <div class="common-btn-2 llg:flex llg:justify-center">
+                            <button
+                                class="text-base font-bold text-white h-10 w-[153px] flex items-center justify-center gap-4 !bg-none !bg-[rgba(255,255,255,0.14)]">Get
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="rs-service-box llg:flex-[0_0_32%] text-center bg-[rgba(255,255,255,0.14)] p-4 pt-[26px] rounded-[16px] border border-[rgba(244,238,238,0.37)]">
+                        <h3 class="text-2xl font-bold mb-1">Advance</h3>
+                        <p class="text-xs font-normal text-[rgba(255,255,255,0.6)] mb-1">Go Pro With Your Business</p>
+                        <h4 class="text-2xl font-bold text-primary mb-5">$299</h4>
+                        <div class="common-btn-2 llg:flex llg:justify-center">
+                            <button
+                                class="text-base font-bold text-white h-10 w-[153px] flex items-center justify-center gap-4 !bg-none !bg-[rgba(255,255,255,0.14)]">Get
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="rs-service-box-pro llg:flex-[0_0_32%] text-center bg-[rgba(221,84,84,0.08)] p-4 pt-[26px] rounded-[16px] relative">
+                        <span
+                            class="text-[8px] font-medium rounded-b-[8px] rounded-t-none bg-white text-[#24262d] inline-block w-[125px] h-[14px] absolute top-0 left-1/2 -translate-x-1/2">
+                            Most Popular
+                        </span>
+                        <h3 class="text-2xl font-bold mb-1">Pro</h3>
+                        <p class="text-xs font-normal text-[rgba(255,255,255,0.6)] mb-1">Go Pro With Your Business.</p>
+                        <h4 class="text-2xl font-bold text-primary mb-5">$299</h4>
+                        <div class="common-btn">
+                            <button
+                                class="text-base font-bold text-white h-10 w-[153px] flex items-center justify-center gap-4 !bg-none !bg-[rgba(221,84,84,0.16)]">Get
+                                Now
+                                <span class="border-anim"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rs-service-box-2-wrapper">
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg mb-4 flex items-center justify-between">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Set up Admin panel on your Server.
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Configure Ready Commerce Customer App, Rider app and Customer <br> Webstie with and
+                                admin
+                                panel.
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Customer App name, logo colors, package name, splash screen etc update <br>
+                                (all materials will be given by customer).
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Customer App name, logo colors, package name, splash screen etc update <br>
+                                (all materials will be given by customer).
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Rider App name, logo colors, package name, splash screen etc update
+                                (all materials will be given by customer).
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                SMTP Mail Configuration for Forget Password, Order Invoice email etc.
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Existing SMS Getaway Configuration for Sent OTP.
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Existing Payment Getaway Configuration.
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Customer App all resource Manage, Configuration App and publish Play <br> Store .
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Rider App all resource Manage, Configuration App and publish Play Store.
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Customer app, Rider app, Web Site and Admin Revision, Testing and <br> Feedback.
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Translate all applications to your local language (Customer app).
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between mb-4">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Customer App all resource Manage, Configuration App and publish <br> AppStore.
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rs-service-box-2 h-[76px] px-6 leading-[78px] bg-[rgba(255,255,255,0.08)] rounded-lg flex items-center justify-between">
+                    <div class="grid grid-cols-12 gap-6 w-full items-center">
+                        <div class="col-span-7">
+                            <p
+                                class="text-[20px] font-normal text-[rgba(255,255,255,0.8)] flex items-center gap-4 leading-[140%]">
+                                <img src="./assets/img/icons/red-circle.svg" alt="">
+                                Rider App all resource Manage, Configuration App and publish AppStore.
+                            </p>
+                        </div>
+                        <div class="col-span-5">
+                            <div class="flex items-center justify-between h-full">
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/times-circle-2.svg" alt="">
+                                </i>
+                                <i
+                                    class="rounded-[50px] flex items-center justify-center w-[60px] h-[60px] shadow-[0_4px_8px_0_rgba(36,45,53,0.13)] bg-[rgba(255,255,255,0.16)]">
+                                    <img class="w-content" src="./assets/img/icons/check-circle-02.svg" alt="">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <!-- KEY FEATURE -->
+        <section class=" max-w-2lg mx-auto px-4 py-[80px] overflow-hidden">
+            <div class="section-title-wrapper text-center mb-4">
+                <h2 class="section-title text-5xl font-bold leading-[117%] mb-4">
+                    Key Feature Of Ready MarketPlace
+                </h2>
+                <p class="text-lg font-normal leading-[144%]">
+                    Customers can utilize the customer app to conveniently browse products, make purchases, track
+                    orders, and stay <br> updated s, experience and fostering brand loyalty.
+                </p>
+            </div>
+
+            <!-- Tabs -->
+            <div
+                class="rs-tab-btn h-[72px] p-3 bg-[rgba(255,255,255,0.08)] backdrop-blur-[10px] rounded-lg w-[572px] m-auto flex items-center justify-between gap-4 mb-[32px]">
+                <button
+                    class="font-normal text-base h-12 bg-[rgba(255,255,255,0.08)] rounded-lg w-[33%] active relative"
+                    data-category="website">Website</button>
+                <button class="font-normal text-base h-12 bg-[rgba(255,255,255,0.08)] rounded-lg w-[33%] relative"
+                    data-category="mobile-app">Mobile App</button>
+                <button class="font-normal text-base h-12 bg-[rgba(255,255,255,0.08)] rounded-lg w-[33%] relative"
+                    data-category="admin-panel">Admin Panel</button>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper !pb-[32px] ml-[-140px]">
+                <div class="swiper-wrapper items-center">
+
+                    <!-- WEB SITE -->
+                    <div class="swiper-slide website">
+                        <div class="rs-website-thumb relative">
+                            <img class="w-[480px] h-[244px] rounded-lg object-cover"
+                                src="./assets/img/key-feature/website-02.jpg" alt="">
+                            <h3 class="text-lg font-medium absolute left-1/2 -translate-x-1/2 bottom-5 z-[1]">Product
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide website">
+                        <div class="rs-website-thumb relative">
+                            <img class="w-[480px] h-[244px] rounded-lg object-cover"
+                                src="./assets/img/key-feature/website-01.jpg" alt="">
+                            <h3 class="text-lg font-medium absolute left-1/2 -translate-x-1/2 bottom-5 z-[1]">Home Page
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide website">
+                        <div class="rs-website-thumb relative">
+                            <img class="w-[480px] h-[244px] rounded-lg object-cover"
+                                src="./assets/img/key-feature/website-03.jpg" alt="">
+                            <h3 class="text-lg font-medium absolute left-1/2 -translate-x-1/2 bottom-5 z-[1]">My Wallet
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- MOBILE APP -->
+                    <div class="swiper-slide mobile-app">
+                        <div class="rs-website-thumb relative">
+                            <img class="w-[480px] h-[244px] rounded-lg object-cover"
+                                src="./assets/img/key-feature/mobile-app-02.jpg" alt="">
+                            <h3 class="text-lg font-medium absolute left-1/2 -translate-x-1/2 bottom-5 z-[1]">Wallet, Add Wallet, Notification </h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mobile-app">
+                        <div class="rs-website-thumb relative">
+                            <img class="w-[480px] h-[244px] rounded-lg object-cover"
+                                src="./assets/img/key-feature/mobile-app-01.jpg" alt="">
+                            <h3 class="text-lg font-medium absolute left-1/2 -translate-x-1/2 bottom-5 z-[1]">Home, Product Details, Profile</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mobile-app">
+                        <div class="rs-website-thumb relative">
+                            <img class="w-[480px] h-[244px] rounded-lg object-cover"
+                                src="./assets/img/key-feature/mobile-app-03.jpg" alt="">
+                            <h3 class="text-lg font-medium absolute left-1/2 -translate-x-1/2 bottom-5 z-[1]">Massage List, Chat, Post Ad</h3>
+                        </div>
+                    </div>
+
+                    <!-- ADMIN PANEL -->
+                    <div class="swiper-slide admin-panel">
+                        <div class="rs-website-thumb relative">
+                            <img class="w-[480px] h-[244px] rounded-lg object-cover"
+                                src="./assets/img/key-feature/admin-panel-02.jpg" alt="">
+                            <h3 class="text-lg font-medium absolute left-1/2 -translate-x-1/2 bottom-5 z-[1]">User Management</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide admin-panel">
+                        <div class="rs-website-thumb relative">
+                            <img class="w-[480px] h-[244px] rounded-lg object-cover"
+                                src="./assets/img/key-feature/admin-panel-01.jpg" alt="">
+                            <h3 class="text-lg font-medium absolute left-1/2 -translate-x-1/2 bottom-5 z-[1]">Admin Dashboard</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide admin-panel">
+                        <div class="rs-website-thumb relative">
+                            <img class="w-[480px] h-[244px] rounded-lg object-cover"
+                                src="./assets/img/key-feature/admin-panel-03.jpg" alt="">
+                            <h3 class="text-lg font-medium absolute left-1/2 -translate-x-1/2 bottom-5 z-[1]">General Setting</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="common-btn w-full">
+                <button
+                    class="text-base font-medium text-primary h-12 w-[172px] flex items-center gap-4 justify-center ml-auto mr-auto">View
+                    All
+                    <span class="border-anim"></span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- TECHNOLOGY SECTION -->
+        <section
+            class="rs-technology-area relative bg-[url('./assets/img/bg/total-package-bg.jpg')] bg-cover bg-center py-[80px] z-[1] overflow-hidden">
+            <div class="max-w-2lg mx-auto px-4">
+                <div class="section-title-wrapper text-center mb-[120px]">
+                    <h2 class="section-title text-5xl font-bold leading-[117%]">We Use Modern</h2>
+                    <span class="sub-title text-5xl font-bold leading-[117%] text-primary mb-4 block">
+                        Technology Across All Platforms
+                    </span>
+                    <p class="text-lg font-normal leading-[144%]">
+                        Customers can utilize the customer app to conveniently browse products, make purchases, track
+                        orders, and stay <br> updated, experience and fostering brand loyalty.
+                    </p>
+                </div>
+
+                <!-- Background Rings -->
+                <div
+                    class="rs-technology-icons-bg w-[750px] h-[750px] ml-auto mr-auto rounded-full bg-[rgba(255,255,255,0.04)] backdrop-blur-[7px] relative">
+                    <div
+                        class="rs-technology-icons-bg rs-technology-icons-bg-2 w-[550px] h-[550px] ml-auto mr-auto rounded-full bg-[rgba(255,255,255,0.04)] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    </div>
+                    <div
+                        class="rs-technology-icons-bg rs-technology-icons-bg-3 w-[350px] h-[350px] ml-auto mr-auto rounded-full bg-[rgba(255,255,255,0.04)] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    </div>
+
+                    <!-- All icons with backdrop-blur style -->
+                    <div class="rs-technology-icon absolute overflow-hidden">
+                        <div class="backdrop-blur-[10px] w-full h-full flex items-center justify-center">
+                            <img class="h-content w-content" src="./assets/img/icons/technology-01.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="rs-technology-icon absolute overflow-hidden">
+                        <div class="backdrop-blur-[10px] w-full h-full flex items-center justify-center">
+                            <img class="h-content w-content" src="./assets/img/icons/technology-02.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="rs-technology-icon absolute overflow-hidden">
+                        <div class="backdrop-blur-[10px] w-full h-full flex items-center justify-center">
+                            <img class="h-content w-content" src="./assets/img/icons/technology-03.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="rs-technology-icon absolute overflow-hidden">
+                        <div class="backdrop-blur-[10px] w-full h-full flex items-center justify-center">
+                            <img class="h-content w-content" src="./assets/img/icons/technology-04.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="rs-technology-icon absolute overflow-hidden">
+                        <div class="backdrop-blur-[10px] w-full h-full flex items-center justify-center">
+                            <img class="h-content w-content" src="./assets/img/icons/technology-05.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="rs-technology-icon absolute overflow-hidden">
+                        <div class="backdrop-blur-[10px] w-full h-full flex items-center justify-center">
+                            <img class="h-content w-content" src="./assets/img/icons/technology-06.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="rs-technology-icon absolute overflow-hidden">
+                        <div class="backdrop-blur-[10px] w-full h-full flex items-center justify-center">
+                            <img class="h-content w-content" src="./assets/img/icons/technology-07.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="rs-technology-icon absolute overflow-hidden">
+                        <div class="backdrop-blur-[10px] w-full h-full flex items-center justify-center">
+                            <img class="h-content w-content" src="./assets/img/icons/technology-08.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="rs-technology-icon absolute overflow-hidden">
+                        <div class="backdrop-blur-[10px] w-full h-full flex items-center justify-center">
+                            <img class="h-content w-content" src="./assets/img/icons/technology-09.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="rs-technology-icon absolute overflow-hidden">
+                        <div class="backdrop-blur-[10px] w-full h-full flex items-center justify-center">
+                            <img class="h-content w-content" src="./assets/img/icons/technology-11.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Center icon -->
+                    <div class="rs-technology-icon center-icon absolute overflow-hidden">
+                        <div class="backdrop-blur-[10px] w-full h-full flex items-center justify-center">
+                            <img class="h-content w-content" src="./assets/img/icons/technology-10.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FAQ -->
+        <section class="rs-faq-area relative max-w-2lg mx-auto px-4 py-[140px]">
+            <div class="grid grid-cols-12 gap-10">
+                <div class="col-span-12 xl:col-span-6">
+                    <div class="section-title-wrapper">
+                        <h2 class="section-title text-5xl font-bold leading-[117%] mb-4">
+                            Frequently <br> Asked Questions
+                        </h2>
+                        <p class="text-lg font-normal leading-[144%] text-[#667085] mb-6">
+                            Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free,
+                            personalized 30-minute onboarding call to get you up and running as soon as possible.
+                        </p>
+                        <div class="common-btn">
+                            <button
+                                class="text-base font-medium text-primary h-12 w-[141px] flex items-center justify-center gap-4">Let's
+                                Talk
+                                <img src="./assets/img/icons/arrow-left.svg" alt="">
+                                <span class="border-anim"></span>
+                            </button>
+                        </div>
+                        <div class="w-full ml-auto">
+                            <img class="ml-auto mr-[56px] mt-[-25px]" src="./assets/img/icons/faq-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 xl:col-span-6">
+                    <div class="w-full flex items-center justify-center">
+                        <div id="accordion" data-accordion="single" class="space-y-3">
+
+                            <!-- FAQ 1 -->
+                            <div
+                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                <div>
+                                    <button type="button"
+                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                        aria-expanded="false" aria-controls="acc-panel-1" id="acc-trigger-1">
+                                        <div class="flex-1 flex justify-between items-center">
+                                            <p class="font-semibold text-2xl">What is ReadyClassify?</p>
+                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                class="transition-all duration-300 rotate-180">
+                                        </div>
+                                    </button>
+                                    <div id="acc-panel-1" role="region" aria-labelledby="acc-trigger-1"
+                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                        <div class="overflow-hidden">
+                                            <p
+                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                <b class="text-white">ReadyClassify</b> is a full-featured classified
+                                                app that allows users to buy, sell, and rent
+                                                products or services locally or worldwide. It includes a flutter mobile
+                                                app for
+                                                Android/iOS, User Webstie and a powerful admin panel for management.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div
+                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                <div>
+                                    <button type="button"
+                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                        aria-expanded="false" aria-controls="acc-panel-2" id="acc-trigger-2">
+                                        <div class="flex-1 flex justify-between items-center">
+                                            <p class="font-semibold text-2xl">Who is behind ReadyClassify?</p>
+                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                class="transition-all duration-300 rotate-180">
+                                        </div>
+                                    </button>
+                                    <div id="acc-panel-2"
+                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                        <div class="overflow-hidden">
+                                            <p
+                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                <b class="text-white">RazinSoft,</b> a trusted software company,
+                                                developed ReadyClassify. We focus on building
+                                                reliable, user-friendly apps and platforms for businesses and
+                                                individuals.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div
+                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                <div>
+                                    <button type="button"
+                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                        aria-expanded="false" aria-controls="acc-panel-3" id="acc-trigger-3">
+                                        <div class="flex-1 flex justify-between items-center">
+                                            <p class="font-semibold text-2xl">Can I use ReadyClassify for my own
+                                                marketplace?</p>
+                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                class="transition-all duration-300 rotate-180">
+                                        </div>
+                                    </button>
+                                    <div id="acc-panel-3"
+                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                        <div class="overflow-hidden">
+                                            <p
+                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                Yes! ReadyClassify is fully customizable. You can run your own
+                                                marketplace, manage
+                                                categories, set membership plans, and control user interactions via the
+                                                admin panel.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div
+                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                <div>
+                                    <button type="button"
+                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                        aria-expanded="false" aria-controls="acc-panel-4" id="acc-trigger-4">
+                                        <div class="flex-1 flex justify-between items-center">
+                                            <p class="font-semibold text-2xl">Is it safe to use?</p>
+                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                class="transition-all duration-300 rotate-180">
+                                        </div>
+                                    </button>
+                                    <div id="acc-panel-4"
+                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                        <div class="overflow-hidden">
+                                            <p
+                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                Absolutely. ReadyClassify includes verified user accounts, moderation
+                                                tools, and secure
+                                                payment options to ensure a safe environment for both buyers and
+                                                sellers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 5 -->
+                            <div
+                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                <div>
+                                    <button type="button"
+                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                        aria-expanded="false" aria-controls="acc-panel-5" id="acc-trigger-5">
+                                        <div class="flex-1 flex justify-between items-center">
+                                            <p class="font-semibold text-2xl">What platforms are supported?</p>
+                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                class="transition-all duration-300 rotate-180">
+                                        </div>
+                                    </button>
+                                    <div id="acc-panel-5"
+                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                        <div class="overflow-hidden">
+                                            <p
+                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                The app supports Responsive <b class="text-white">Website</b> and
+                                                flutters Native <b class="text-white">Android and iOS.</b>
+                                                The admin panel is web-based and can be accessed from any modern
+                                                browser.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 6 -->
+                            <div
+                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                <div>
+                                    <button type="button"
+                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                        aria-expanded="false" aria-controls="acc-panel-6" id="acc-trigger-6">
+                                        <div class="flex-1 flex justify-between items-center">
+                                            <p class="font-semibold text-2xl">Does it include real-time chat?</p>
+                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                class="transition-all duration-300 rotate-180">
+                                        </div>
+                                    </button>
+                                    <div id="acc-panel-6"
+                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                        <div class="overflow-hidden">
+                                            <p
+                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                Yes, buyers and sellers can communicate instantly via the in-app chat
+                                                system, complete
+                                                with notifications and read receipts.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 7 -->
+                            <div
+                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                <div>
+                                    <button type="button"
+                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                        aria-expanded="false" aria-controls="acc-panel-7" id="acc-trigger-7">
+                                        <div class="flex-1 flex justify-between items-center">
+                                            <p class="font-semibold text-2xl">Can I customize the app?</p>
+                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                class="transition-all duration-300 rotate-180">
+                                        </div>
+                                    </button>
+                                    <div id="acc-panel-7"
+                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                        <div class="overflow-hidden">
+                                            <p
+                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                Yes, you can customize the app’s look and functionality.
+                                                Note: Codecanyon support includes bug fixes and setup help as per
+                                                Codecanyon license.
+                                                Custom feature development is separate. Please contact our support or
+                                                book a meeting
+                                                for your custom requirements.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer class="rs-footer-area relative pt-[60px] overflow-hidden">
+        <div class="rs-footer-shape absolute"></div>
+        <div class="max-w-2lg mx-auto px-4">
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 lg:col-span-4 llg:col-span-4">
+                    <div class="rs-footer-logo mb-6">
+                        <a href="#"><img src="./assets/img/logo/footer-logo.png" alt="" srcset=""></a>
+                    </div>
+                    <p class="rs-footer-text text-sm font-normal leading-[150%] pb-6 text-[rgba(255,255,255,0.6)]">
+                        Elevate Your Business with Innovative
+                        Web, App, and Software <br> Solutions. Partner for Excellence in Tech.
+                    </p>
+                    <a class="flex items-center gap-4 text-sm font-light mb-3" href="mailto:support@razinsoft.com">
+                        <img src="./assets/img/icons/envelope.svg" alt="">
+                        support@razinsoft.com
+                    </a>
+                    <a class="flex items-center gap-4 text-sm font-light mb-3" href="tel:+8801937203743">
+                        <img src="./assets/img/icons/phone.svg" alt="">
+                        +8801937203743
+                    </a>
+                    <div class="rs-social-icon flex items-center gap-4">
+                        <a href="#"
+                            class="w-8 h-8 backdrop-blur-[6.4px] bg-[rgba(246,247,249,0.24)] rounded-[6px] flex items-center justify-center"><img
+                                class="w-content h-content" src="./assets/img/icons/Social-01.svg" alt="">
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 backdrop-blur-[6.4px] bg-[rgba(246,247,249,0.24)] rounded-[6px] flex items-center justify-center"><img
+                                class="w-content h-content ml-[2px]" src="./assets/img/icons/youtube.svg" alt="">
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 backdrop-blur-[6.4px] bg-[rgba(246,247,249,0.24)] rounded-[6px] flex items-center justify-center"><img
+                                class="w-content h-content" src="./assets/img/icons/linkin.svg" alt="">
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 backdrop-blur-[6.4px] bg-[rgba(246,247,249,0.24)] rounded-[6px] flex items-center justify-center"><img
+                                class="w-content h-content" src="./assets/img/icons/facebook.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-2 llg:col-span-2">
+                    <div class="rs-footer-menu">
+                        <h3 class="text-lg font-semibold leading-[144%] mb-3">Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Service Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-2 llg:col-span-2">
+                    <div class="rs-footer-menu">
+                        <h3 class="text-lg font-semibold leading-[144%] mb-3">Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Software Demo</a></li>
+                            <li><a href="#">Installation/Service</a></li>
+                            <li><a href="#">Customisation</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support Ticket</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 llg:col-span-4">
+                    <div
+                        class="rs-footer-widget relative bg-[rgba(29,30,36,0.12)] p-4 rounded-2xl border border-[rgba(244,238,238,0.37)]">
+                        <h3 class="font-semibold text-base md:text-xl mb-3">WhatsApp Support Available</h3>
+                        <div class="number mb-3 flex items-center gap-[10px]">
+                            <div class="number-items bg-[rgba(255,255,255,0.04)] p-3 rounded-lg pt-[11px] pb-[11px]">
+                                <span class="text-sm font-normal mb-1 block">Queries </span>
+                                <a class="font-medium text-lg text-[#3b82f6] flex items-center gap-1"
+                                    href="tel:+8801234567890">
+                                    <i
+                                        class="w-6 h-6 backdrop-blur-[6.4px] bg-[rgba(37,211,102,0.16)] rounded-[4px] flex items-center justify-center"><img
+                                            class="w-4 h-4" src="./assets/img/icons/Social-01.svg" alt=""></i>
+                                    +8801234567890
+                                </a>
+                            </div>
+                            <div class="number-items bg-[rgba(255,255,255,0.04)] p-3 rounded-lg pt-[11px] pb-[11px]">
+                                <span class="text-sm font-normal mb-1 block">Queries </span>
+                                <a class="font-medium text-lg text-[#3b82f6] flex items-center gap-1"
+                                    href="tel:+8801234567890">
+                                    <i
+                                        class="w-6 h-6 backdrop-blur-[6.4px] bg-[rgba(37,211,102,0.16)] rounded-[4px] flex items-center justify-center"><img
+                                            class="w-4 h-4" src="./assets/img/icons/Social-01.svg" alt=""></i>
+                                    +8801234567890
+                                </a>
+                            </div>
+                        </div>
+                        <p class="text-sm font-normal">Support Hours: Sun-Thu, 10 AM-6 PM (GMT+6, Asia/Dhaka)</p>
+                        <cite class="border-b border-[rgba(255,255,255,0.16)] mt-3 mb-3 block"></cite>
+                        <div class="rs-footer-icon flex items-center justify-center gap-4">
+                            <a href="#" class="bg-white h-[40px] w-[164px] rounded-lg flex items-center justify-center">
+                                <img class="h-content w-content"
+                                    src="./assets/img/icons/envato-market-codecanyon-logo-1.svg" alt="">
+                            </a>
+                            <a href="#" class="bg-white h-[40px] w-[164px] rounded-lg flex items-center justify-center">
+                                <img class="h-content w-content" src="./assets/img/icons/envato-2.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="rs-copyright-area mt-[60px] text-center] border-t border-[rgba(255,255,255,0.12)] h-[36px] flex items-center justify-center">
+            <a class="text-xs font-normal" href="#">© 2026 All rights reserved. Developed by Razinsoft</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/count.js"></script> -->
+    <script src="./js/accordion.js"></script>
+    <script src="./js/btn.js"></script>
+
+</body>
+
+</html>

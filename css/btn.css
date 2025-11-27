@@ -1,0 +1,44 @@
+/* COMON BUTTON */
+.common-btn {
+	position: relative;
+	display: inline-block;
+}
+
+.common-btn button {
+	background: linear-gradient(228deg, rgba(255 255 255 / 18%) 0%, rgba(221, 84, 84, 0.32) 50.48%, rgba(255, 254, 254, 0.11) 100%);
+	border-radius: 8px;
+	backdrop-filter: blur(10px);
+	position: relative;
+	border: none;
+	z-index: 2;
+	overflow: hidden;
+}
+.common-btn a {
+	background: linear-gradient(228deg, rgba(255 255 255 / 18%) 0%, rgba(221, 84, 84, 0.32) 50.48%, rgba(255, 254, 254, 0.11) 100%);
+	border-radius: 8px;
+	backdrop-filter: blur(10px);
+	position: relative;
+	border: none;
+	z-index: 2;
+	overflow: hidden;
+}
+.border-anim {
+	position: absolute;
+	inset: 0;
+	padding: 1px;
+	border-radius: 8px;
+	pointer-events: none;
+	z-index: 1;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #dd5454af 50%, rgba(0, 0, 0, 0) 100%);
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+}
+
+.common-btn-2 button {
+	background: linear-gradient(90deg, rgba(255, 254, 254, 0.08) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 254, 254, 0.08) 100%);
+	border-radius: 8px;
+	backdrop-filter: blur(10px);
+	border: 1px solid transparent;
+	border-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #fff3f38c 50%, rgba(0, 0, 0, 0) 100%) 1;
+}
