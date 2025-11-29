@@ -182,6 +182,8 @@ function animateIcons() {
 animateIcons();
 
 
+
+
 //offcanvas
 const offcanvasBtn = document.querySelector('.rs-offcanvas-btn');
 const offcanvasArea = document.querySelector('.tp-offcanvas-area');
@@ -205,23 +207,46 @@ offcanvasCloseElements.forEach(el => {
 // <!-- Swiper JS -->
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 22,
-    loop: false,
-    // breakpoints: {
-    //     320: {
-    //         slidesPerView: 16,
-    //         spaceBetween: 12,
-    //     },
-    //     576: {
-    //         slidesPerView: 14,
-    //         spaceBetween: 16,
-    //     },
-    //     768: {
-    //         slidesPerView: 10,
-    //         spaceBetween: 18,
-    //     },
-    // }
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    speed: 500,
+    slideToClickedSlide: true,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        },
+        410: {
+            slidesPerView: 1,
+            spaceBetween: 12
+        },
+        576: {
+            slidesPerView: 1,
+            spaceBetween: 18
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 22
+        },
+        992: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        1300: {
+            slidesPerView: 3,
+            spaceBetween: 35
+        }
+    }
 });
+
+
+
 
 // Tabs functionality
 document.addEventListener("DOMContentLoaded", () => {
@@ -231,20 +256,21 @@ document.addEventListener("DOMContentLoaded", () => {
         tab.addEventListener('click', () => {
             const category = tab.getAttribute('data-category');
 
-            // Active class
             tabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
-            // Find first slide with that category class
             const slides = Array.from(document.querySelectorAll('.swiper-slide'));
             const index = slides.findIndex(slide => slide.classList.contains(category));
 
             if (index >= 0) {
-                swiper.slideTo(index);
+                swiper.slideTo(index, 500);
             }
         });
     });
 });
+
+
+
 
 
 
