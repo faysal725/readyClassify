@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadyClassify</title>
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- accordion cdn  -->
+
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="../tailwind.config.js"></script>
+
+    <!-- custom CSS -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/icons/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/breadcrumb.css">
+    <link rel="stylesheet" href="../css/btn.css">
+
+
+</head>
+
+<body>
+    <!-- offcanvas start -->
+    <div class="tp-offcanvas-area">
+        <div class="tp-offcanvas-wrapper">
+            <div class="tp-offcanvas-header flex items-center justify-between">
+                <div class="tp-offcanvas-logo">
+                    <a href="javascript:void(0)">
+                        <img src="../assets/img/logo/header-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="tp-offcanvas-close flex items-center justify-center">
+                    <div class="common-btn">
+                        <button
+                            class="text-base font-medium text-primary h-10 w-10 flex items-center gap-4 justify-center !bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.33)_100%)]"><i
+                                class="fa-solid fa-xmark !text-white"></i>
+                            <span class="border-anim !p-[2px]"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="common-btn rs-buy-now-btn ml-0 mr-0 llg:ml-auto llg:mr-2 md:ml-auto md:mr-2 lg:ml-0 lg:mr-0">
+                <button class="text-base font-medium text-primary h-12 px-6">Buy Now <span class="border-anim"></span>
+                </button>
+            </div>
+            <div class="rs-main-menu  d-lg-none mb-[80px]">
+                <nav class="tp-mobile-menu-active">
+                    <ul class="">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Feature <img src="../assets/img/icons/angle-down-small.svg" alt=""></a>
+                            <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="../assets/img/icons/dropdown-05.svg"
+                                                alt="">
+                                        </i>
+                                        Website
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="../assets/img/icons/dropdown-04.svg"
+                                                alt="">
+                                        </i>
+                                        User App
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="../assets/img/icons/dropdown-03.svg"
+                                                alt="">
+                                        </i>
+                                        Admin panel
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services <img src="../assets/img/icons/angle-down-small.svg" alt=""></a>
+                            <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="../assets/img/icons/dropdown-02.svg"
+                                                alt="">
+                                        </i>
+                                        Installation & Publication
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="../assets/img/icons/dropdown-01.svg"
+                                                alt="">
+                                        </i>
+                                        Customizations
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Support & Help <img src="../assets/img/icons/angle-down-small.svg" alt=""></a>
+                            <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="../assets/img/icons/dropdown-01.svg"
+                                                alt="">
+                                        </i>
+                                        Installation Service
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="../assets/img/icons/dropdown-01.svg"
+                                                alt="">
+                                        </i>
+                                        Customizations
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="../assets/img/icons/dropdown-01.svg"
+                                                alt="">
+                                        </i>
+                                        Documentation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                        <i
+                                            class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                            <img class="w-content h-content" src="../assets/img/icons/dropdown-01.svg"
+                                                alt="">
+                                        </i>
+                                        Support Ticket
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative !justify-center"
+                                        href="#">
+                                        All Product
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Demo</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="tp-offcanvas-info mb-12">
+                <h3 class="tp-offcanvas-info-title mb-15">
+                    information
+                </h3>
+                <span>
+                    <a href="tel:+8801937203743">
+                        +8801937203743
+                    </a>
+                </span>
+                <span>
+                    <a href="mailto:razinsoftltd@gmail.com">
+                        razinsoftltd@gmail.com
+                    </a>
+                </span>
+                <span>
+                    <a href="javascript:void(0)">
+                        7240 Wentworth Road Valdosta, GA 31601
+                    </a>
+                </span>
+            </div>
+            <div class="tp-offcanvas-social">
+                <h3 class="tp-offcanvas-social-title mb-4">
+                    follow us
+                </h3>
+                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="tp-offcanvas-overlay"></div>
+    <!-- offcanvas end -->
+
+
+    <!-- HEADER -->
+    <header id="demo"
+        class="rs-header-area max-w-2lg mx-auto flex items-center justify-between py-[24px] top-0 left-0 right-0 z-[99] px-4 relative z-1">
+        <div class="rs-header-logo">
+            <a href="#"><img src="../assets/img/logo/header-logo.png" alt=""></a>
+        </div>
+
+        <div class="rs-main-menu hidden xl:block">
+            <nav>
+                <ul class="flex items-center gap-6">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#feature">Feature<img src="../assets/img/icons/angle-down-small.svg" alt=""></a>
+                        <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="../assets/img/icons/dropdown-05.svg"
+                                            alt="">
+                                    </i>
+                                    Website
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="../assets/img/icons/dropdown-04.svg"
+                                            alt="">
+                                    </i>
+                                    User App
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="../assets/img/icons/dropdown-03.svg"
+                                            alt="">
+                                    </i>
+                                    Admin panel
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#service">Services
+                            <img src="../assets/img/icons/angle-down-small.svg" alt=""></a>
+                        <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="../assets/img/icons/dropdown-02.svg"
+                                            alt="">
+                                    </i>
+                                    Installation & Publication
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="../assets/img/icons/dropdown-01.svg"
+                                            alt="">
+                                    </i>
+                                    Customizations
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Support & Help
+                            <img src="../assets/img/icons/angle-down-small.svg" alt=""></a>
+                        <ul class="rs-submenu bg-[#17181D] rounded-lg p-4 absolute top-[25px] left-0">
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="../assets/img/icons/dropdown-01.svg"
+                                            alt="">
+                                    </i>
+                                    Installation Service
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="../assets/img/icons/dropdown-01.svg"
+                                            alt="">
+                                    </i>
+                                    Customizations
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="../assets/img/icons/dropdown-01.svg"
+                                            alt="">
+                                    </i>
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative" href="#">
+                                    <i
+                                        class="w-10 h-10 bg-[rgba(255,255,255,0.08)] inline-block rounded-lg flex items-center justify-center">
+                                        <img class="w-content h-content" src="../assets/img/icons/dropdown-01.svg"
+                                            alt="">
+                                    </i>
+                                    Support Ticket
+                                </a>
+                            </li>
+                            <li>
+                                <a class="bg-[rgba(255,255,255,0.08)] h-[64px] p-3 rounded-lg relative justify-center"
+                                    href="#">
+                                    All Product
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#demo">Demo</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="common-btn rs-buy-now-btn ml-0 mr-0 llg:ml-auto llg:mr-2 md:ml-auto md:mr-2 lg:ml-0 lg:mr-0">
+            <button class="text-base font-medium text-primary h-12 px-6">Buy Now <span class="border-anim"></span>
+            </button>
+        </div>
+        <div class="common-btn offcanvas-show-btn hidden llg:block md:block lg:hidden">
+            <button
+                class="text-base font-medium text-primary w-12 h-12 flex items-center justify-center  rs-offcanvas-btn">
+                <i class="fa-solid fa-bars text-[24px] !text-white"></i>
+                <span class="border-anim"></span>
+            </button>
+        </div>
+    </header>
+
+
+    <main class="min-h-screen ">
+        <!-- breadcrumb -->
+        <section
+            class="rs-breadcrumb-area max-w-2lg mx-auto px-4  bg-[url('../assets/img/bg/breadcrumb-bg.jpg')] bg-cover bg-center relative overflow-hidden mb-10 z-[1]">
+            <div class="rs-breadcrumb-content pt-[60px] pb-[60px] text-center">
+                <h1 class="rs-breadcrumb-title font-bold text-5xl leading-[117%] mb-10">
+                   We Use <br> Agile Customization Methodology
+                </h1>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer class="rs-footer-area relative pt-[60px] overflow-hidden">
+        <div class="rs-footer-shape absolute"></div>
+        <div class="max-w-2lg mx-auto px-4">
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 lg:col-span-4 md:col-span-6 llg:col-span-4">
+                    <div class="rs-footer-widget-1 rs-footer-logo mb-6">
+                        <a href="#"><img src="../assets/img/logo/footer-logo.png" alt="" srcset=""></a>
+                    </div>
+                    <p class="rs-footer-text text-sm font-normal leading-[150%] pb-6 text-[rgba(255,255,255,0.6)]">
+                        Elevate Your Business with Innovative
+                        Web, App, and Software <br> Solutions. Partner for Excellence in Tech.
+                    </p>
+                    <a class="flex items-center gap-4 text-sm font-light mb-3" href="mailto:support@razinsoft.com">
+                        <img src="../assets/img/icons/envelope.svg" alt="">
+                        support@razinsoft.com
+                    </a>
+                    <a class="flex items-center gap-4 text-sm font-light mb-3" href="tel:+8801937203743">
+                        <img src="../assets/img/icons/phone.svg" alt="">
+                        +8801937203743
+                    </a>
+                    <div class="rs-social-icon flex items-center gap-4">
+                        <a href="#"
+                            class="w-8 h-8 backdrop-blur-[6.4px] bg-[rgba(246,247,249,0.24)] rounded-[6px] flex items-center justify-center"><img
+                                class="w-content h-content" src="../assets/img/icons/Social-01.svg" alt="">
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 backdrop-blur-[6.4px] bg-[rgba(246,247,249,0.24)] rounded-[6px] flex items-center justify-center"><img
+                                class="w-content h-content ml-[2px]" src="../assets/img/icons/youtube.svg" alt="">
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 backdrop-blur-[6.4px] bg-[rgba(246,247,249,0.24)] rounded-[6px] flex items-center justify-center"><img
+                                class="w-content h-content" src="../assets/img/icons/linkin.svg" alt="">
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 backdrop-blur-[6.4px] bg-[rgba(246,247,249,0.24)] rounded-[6px] flex items-center justify-center"><img
+                                class="w-content h-content" src="../assets/img/icons/facebook.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-2 md:col-span-3 llg:col-span-2">
+                    <div class="rs-footer-widget-1 rs-footer-menu">
+                        <h3 class="text-lg font-semibold leading-[144%] mb-3">Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Service Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-2 md:col-span-3 llg:col-span-2">
+                    <div class="rs-footer-widget-1 rs-footer-menu">
+                        <h3 class="text-lg font-semibold leading-[144%] mb-3">Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Software Demo</a></li>
+                            <li><a href="#">Installation/Service</a></li>
+                            <li><a href="#">Customisation</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support Ticket</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 md:col-span-12 llg:col-span-4">
+                    <div
+                        class="rs-footer-widget relative bg-[rgba(29,30,36,0.12)] p-4 rounded-2xl border border-[rgba(244,238,238,0.37)]">
+                        <h3 class="font-semibold text-base md:text-xl mb-3">WhatsApp Support Available</h3>
+                        <div class="number mb-3 flex items-center gap-[10px]">
+                            <div class="number-items bg-[rgba(255,255,255,0.04)] p-3 rounded-lg pt-[11px] pb-[11px]">
+                                <span class="text-sm font-normal mb-1 block">Queries </span>
+                                <a class="font-medium text-lg text-[#3b82f6] flex items-center gap-1"
+                                    href="tel:+8801234567890">
+                                    <i
+                                        class="w-6 h-6 backdrop-blur-[6.4px] bg-[rgba(37,211,102,0.16)] rounded-[4px] flex items-center justify-center"><img
+                                            class="w-4 h-4" src="../assets/img/icons/Social-01.svg" alt=""></i>
+                                    +8801234567890
+                                </a>
+                            </div>
+                            <div class="number-items bg-[rgba(255,255,255,0.04)] p-3 rounded-lg pt-[11px] pb-[11px]">
+                                <span class="text-sm font-normal mb-1 block">Queries </span>
+                                <a class="font-medium text-lg text-[#3b82f6] flex items-center gap-1"
+                                    href="tel:+8801234567890">
+                                    <i
+                                        class="w-6 h-6 backdrop-blur-[6.4px] bg-[rgba(37,211,102,0.16)] rounded-[4px] flex items-center justify-center"><img
+                                            class="w-4 h-4" src="../assets/img/icons/Social-01.svg" alt=""></i>
+                                    +8801234567890
+                                </a>
+                            </div>
+                        </div>
+                        <p class="text-sm font-normal">Support Hours: Sun-Thu, 10 AM-6 PM (GMT+6, Asia/Dhaka)</p>
+                        <cite class="border-b border-[rgba(255,255,255,0.16)] mt-3 mb-3 block"></cite>
+                        <div class="rs-footer-icon flex items-center justify-center gap-4">
+                            <a href="#" class="bg-white h-[40px] w-[164px] rounded-lg flex items-center justify-center">
+                                <img class="h-content w-content"
+                                    src="../assets/img/icons/envato-market-codecanyon-logo-1.svg" alt="">
+                            </a>
+                            <a href="#" class="bg-white h-[40px] w-[164px] rounded-lg flex items-center justify-center">
+                                <img class="h-content w-content" src="../assets/img/icons/envato-2.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="rs-copyright-area mt-[60px] text-center] border-t border-[rgba(255,255,255,0.12)] h-[36px] flex items-center justify-center">
+            <a class="text-xs font-normal px-4" href="#">© 2026 All rights reserved. Developed by Razinsoft</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/count.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/btn.js"></script>
+
+</body>
+
+</html>

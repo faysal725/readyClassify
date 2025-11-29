@@ -9,7 +9,12 @@
 
     .rs-play-store-btn,
     .rs-app-store-btn {
-        width: 130px;
+        width: 110px !important;
+    }
+
+    .rs-play-store-btn img,
+    .rs-app-store-btn img {
+        width: 90px !important;
     }
 
     .rs-process-content-center::before {
@@ -18,6 +23,10 @@
 
     .rs-process-content-center::after {
         right: -36px;
+    }
+
+    .rs-about-us-list li p {
+        padding-right: 0 !important;
     }
 }
 
@@ -31,6 +40,10 @@
 
     .rs-footer-text br {
         display: none;
+    }
+
+    .rs-about-us-list {
+        margin-bottom: 50px !important;
     }
 
     .rs-hero-content p br {
@@ -129,6 +142,17 @@
 
     .accordion-item p.text-2xl {
         font-size: 20px !important;
+    }
+
+    .rs-breadcrumb-title {
+        font-size: 40px !important;
+    }
+
+    .need-help h3,
+    .why-razinsoft h3,
+    .our-culture h3,
+    .rs-about-info h3 {
+        font-size: 32px;
     }
 }
 
@@ -241,6 +265,10 @@
         font-size: 35px !important;
     }
 
+    .rs-about-info p {
+        padding-right: 0 !important;
+    }
+
     .rs-count-widget-item::after {
         right: -35%;
         top: 50px;
@@ -261,6 +289,25 @@
     .section-title-wrapper p br {
         display: none;
     }
+
+    .tp-offcanvas-area .common-btn {
+        width: 100%;
+    }
+
+    .tp-offcanvas-area .rs-buy-now-btn button {
+        width: 100%;
+    }
+
+    .rs-about-info p br {
+        display: none;
+    }
+
+    .need-help h3,
+    .why-razinsoft h3,
+    .our-culture h3,
+    .rs-about-info h3 {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -268,15 +315,19 @@
         display: none !important;
     }
 
+    .rs-breadcrumb-content p br {
+        display: none;
+    }
+
+    .rs-footer-logo {
+        margin-bottom: 16px;
+    }
+
     .tp-offcanvas-area .rs-buy-now-btn {
         display: flex !important;
         width: 100%;
         justify-content: center;
         margin: 40px 0;
-    }
-
-    .tp-offcanvas-area .rs-buy-now-btn button {
-        width: 100%;
     }
 
     .offcanvas-show-btn button {
@@ -422,8 +473,13 @@
         width: 100% !important;
     }
 
+    .rs-footer-widget-1,
     .rs-footer-widget {
-        margin-top: 30px;
+        margin-top: 20px;
+    }
+
+    .rs-footer-widget {
+        padding: 8px !important;
     }
 
     .rs-payment-getaway-icon button {
@@ -501,7 +557,7 @@
     }
 
     .rs-website-content .common-btn a {
-        width: 100%;
+        width: 100% !important;
         height: 40px;
     }
 
@@ -588,6 +644,7 @@
 
     .accordion-item p.text-2xl {
         font-size: 16px !important;
+        line-height: 1.6;
     }
 
     .rs-faq-area .section-title-wrapper {
@@ -625,6 +682,137 @@
         width: 50px !important;
         height: 50px !important;
     }
+
+    .need-help h3,
+    .why-razinsoft h3,
+    .our-culture h3,
+    .rs-about-info h3 {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .rs-about-us-list li strong {
+        font-size: 18px;
+    }
+
+    .our-culture h3 {
+        margin-bottom: 8px;
+    }
+
+    .our-culture p br {
+        display: none;
+    }
+
+    .sub-title-2 {
+        margin-bottom: 8px;
+    }
+
+    .why-razinsoft p {
+        padding-right: 0;
+    }
+
+    .why-razinsoft h3 br {
+        display: none;
+    }
+
+    .rs-breadcrumb-title {
+        font-size: 25px !important;
+    }
+
+    .rs-breadcrumb-content p {
+        font-size: 16px !important;
+    }
 }
 
-@media (max-width: 390px) {}
+@media (max-width: 576px) {
+    .rs-about-info P {
+        font-size: 14PX;
+    }
+
+    .rs-about-info h3 {
+        margin-bottom: 12px;
+    }
+
+    .rs-about-us-list li strong {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .why-razinsoft .grid.grid-cols-12.gap-10 {
+        gap: 0 !important;
+    }
+
+    .why-razinsoft .-translate-y-10 {
+        transform: translateY(0) !important;
+    }
+
+    .need-help h3,
+    .why-razinsoft h3,
+    .our-culture h3,
+    .rs-about-info h3 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .need-help .grid.grid-cols-12.gap-10 {
+        gap: 0 !important;
+    }
+
+    .need-help {
+        padding-top: 30px;
+    }
+
+    .need-help .rounded-3xl {
+        margin-top: 20px;
+    }
+
+    .need-help .max-w-2lg {
+        padding-bottom: 30px;
+    }
+
+    .rs-footer-area .grid.grid-cols-12.gap-6 {
+        gap: 0 !important;
+    }
+
+    .number-items {
+        padding-right: 0;
+    }
+
+    .number-items a {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .rs-hero-btn {
+        flex-wrap: wrap !important;
+    }
+
+    .rs-hero-btn .common-btn-2,
+    .rs-hero-btn .common-btn {
+        width: 100%;
+    }
+
+    .rs-hero-btn button {
+        width: 100%;
+        justify-content: center !important;
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .rs-footer-icon a {
+        width: 100%;
+    }
+
+    .rs-footer-icon {
+        flex-wrap: wrap;
+    }
+
+    .rs-website-content .flex.items-center.gap-4 {
+        flex-wrap: wrap;
+    }
+    .rs-website-content .common-btn {
+        width: 100%;
+    }
+}

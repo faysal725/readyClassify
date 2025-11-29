@@ -15,15 +15,21 @@ const bgElements = [
     document.querySelector('.rs-technology-icons-bg-2'),
     document.querySelector('.rs-technology-icons-bg-3')
 ];
+
 let angles = [210, 250, 90]; // initial angles
+
 function rotateBorders() {
     bgElements.forEach((bg, idx) => {
-        angles[idx] += 0.7; // rotation speed
+        if (!bg) return;
+
+        angles[idx] += 0.7;
         bg.style.setProperty('--angle', angles[idx] + 'deg');
     });
+
     requestAnimationFrame(rotateBorders);
 }
 rotateBorders();
+
 
 // box
 const boxes = document.querySelectorAll('.rs-price-box-items-2, .rs-service-box-pro');
@@ -43,21 +49,23 @@ rotateBorder();
 
 
 
-// menu //
-const submenuLinks = document.querySelectorAll('.rs-submenu li a');
-let borderAngle = 0;
+document.addEventListener("DOMContentLoaded", function () {
 
-function rotateLinkBorder() {
-    borderAngle += 0.7;
+    const submenuLinks = document.querySelectorAll('.rs-submenu li a');
+    let borderAngle = 0;
 
-    submenuLinks.forEach(link => {
-        link.style.setProperty('--border-angle', borderAngle + 'deg');
-    });
+    function rotateLinkBorder() {
+        borderAngle += 0.7;
 
-    requestAnimationFrame(rotateLinkBorder);
-}
+        submenuLinks.forEach(link => {
+            link.style.setProperty('--border-angle', borderAngle + 'deg');
+        });
 
-rotateLinkBorder();
+        requestAnimationFrame(rotateLinkBorder);
+    }
+
+    rotateLinkBorder();
+});
 
 
 
@@ -74,14 +82,17 @@ let R1, R2, R3;
 
 // initialize radii //
 function updateSizes() {
-    let rect = bg.getBoundingClientRect();
+    if (!bg) return;
+
+    const rect = bg.getBoundingClientRect();
     centerX = rect.width / 2;
     centerY = rect.height / 2;
-
     R1 = rect.width / 2;
-    R2 = bg2.getBoundingClientRect().width / 2;
-    R3 = bg3.getBoundingClientRect().width / 2;
+
+    R2 = bg2 ? bg2.getBoundingClientRect().width / 2 : 0;
+    R3 = bg3 ? bg3.getBoundingClientRect().width / 2 : 0;
 }
+
 
 // call initially //
 updateSizes();

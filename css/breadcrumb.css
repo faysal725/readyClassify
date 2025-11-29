@@ -1,0 +1,24 @@
+.rs-breadcrumb-area::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    top: -207px;
+    height: 447px;
+    width: 636px;
+    filter: blur(150px);
+    background: #4c1313;
+    z-index: -1;
+}
+
+.rs-about-us-list li strong::before {
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 5px;
+    left: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--white);
+    border-radius: 100%;
+}
