@@ -57,6 +57,11 @@ html {
 	mask-composite: exclude;
 }
 
+.outline-text {
+	-webkit-text-stroke: 1px #ffffff;
+	text-stroke: 3px #ff5500;
+}
+
 /* HEADER */
 .rs-main-menu nav ul>li {
 	position: relative;
@@ -1179,6 +1184,7 @@ html {
 
 /* <!-- KEY FEATURE --> */
 
+.rs-tab-btn-2 button.active,
 .rs-tab-btn button.active {
 	background: linear-gradient(228deg, rgba(255 255 255 / 18%) 0%, rgba(221, 84, 84, 0.32) 50.48%, rgba(255, 254, 254, 0.11) 100%);
 	border: 1px solid rgb(244 238 238 / 24%);
@@ -1186,6 +1192,7 @@ html {
 	color: var(--primary);
 }
 
+.rs-tab-btn-2 button.active::before,
 .rs-tab-btn button.active::before {
 	position: absolute;
 	content: '';
@@ -1206,6 +1213,7 @@ html {
 	border-radius: 8px;
 }
 
+.rs-collaborate-thumb::after,
 .rs-website-thumb::after {
 	position: absolute;
 	content: '';
@@ -1214,6 +1222,10 @@ html {
 	left: 0;
 	bottom: 0;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) -2%, rgba(0, 0, 0, 1.0) 100%);
+}
+
+.rs-collaborate-thumb::after {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) -2%, rgb(0 0 0 / 85%) 100%);
 }
 
 .rs-website-thumb::before {
@@ -1331,4 +1343,45 @@ html {
 	z-index: -1;
 	bottom: 0;
 	left: 35%;
+}
+
+/* customization */
+.rs-contact-btn {
+	border: 1px solid #ffffff2e;
+	border-bottom: transparent;
+	border-top: transparent;
+	backdrop-filter: blur(10px);
+	transition: .2s linear;
+}
+
+.customization-box {
+	backdrop-filter: blur(25px);
+}
+
+.rs-collaborate-thumb a:hover img {
+	filter: brightness(0) saturate(100%) invert(45%) sepia(56%) saturate(2000%) hue-rotate(-10deg);
+}
+
+.rs-collaborate-thumb a:hover {
+	color: var(--error);
+}
+
+a:hover .border-anim-2 {
+	background: linear-gradient(175deg, rgba(0, 0, 0, 0) 0%, #dd5454af 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.rs-collaborate-form textarea::placeholder,
+.rs-collaborate-form input::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--gray-500);
+	transform: translateY(-2px);
+}
+
+.rs-collaborate-form input:focus::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--gray-500);
+	transform: translateY(-5px);
+	color: transparent;
 }

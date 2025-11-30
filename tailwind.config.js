@@ -6,14 +6,16 @@ tailwind.config = {
             lg: "992px",
             xl: "1200px",
             llg: { min: "992px", max: "1199px" },
-            
+
             "xl-1": "1140px",
         },
 
         extend: {
             fontFamily: {
+                poppins: ['Poppins', 'sans-serif'],
                 mulish: ['Mulish', 'sans-serif'],
             },
+
             maxWidth: {
                 '2lg': '1440px',
             },

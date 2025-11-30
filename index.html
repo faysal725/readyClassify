@@ -28,11 +28,53 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/scrool-to-top.css">
 
 
 </head>
 
 <body>
+
+    <!-- scrollToTop -->
+    <div class="scrollToTop active-progress">
+        <div class="arrowUp">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+        <div class="water" style="transform: translate(0px, 47%);">
+            <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                <use xlink:href="#wave"></use>
+            </svg>
+            <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                <use xlink:href="#wave"></use>
+            </svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 560 20" style="display: none;">
+                <symbol id="wave">
+                    <path
+                        d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"
+                        fill="#"
+                        style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 301.839, 301.839; stroke-dashoffset: 140.858px;">
+                    </path>
+                    <path
+                        d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"
+                        fill="#"
+                        style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 301.839, 301.839; stroke-dashoffset: 140.858px;">
+                    </path>
+                    <path
+                        d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"
+                        fill="#"
+                        style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 301.839, 301.839; stroke-dashoffset: 140.858px;">
+                    </path>
+                    <path
+                        d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"
+                        fill="#"
+                        style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 301.839, 301.839; stroke-dashoffset: 140.858px;">
+                    </path>
+                </symbol>
+            </svg>
+        </div>
+    </div>
+
     <!-- offcanvas start -->
     <div class="tp-offcanvas-area">
         <div class="tp-offcanvas-wrapper">
@@ -1659,7 +1701,7 @@
 
             <!-- Swiper -->
             <div class="swiper-box h-[370px]">
-                <div class="swiper mySwiper !pb-[32px] ml-[-236px]">
+                <div class="swiper mySwiper !pb-[32px] ml-[-153px]">
                     <div class="swiper-wrapper items-center">
                         <!-- WEB SITE -->
                         <div class="swiper-slide website">
@@ -1862,233 +1904,235 @@
 
 
         <!-- FAQ -->
-        <section class="rs-faq-area relative max-w-2lg mx-auto px-4 py-[140px] overflow-hidden">
-            <div class="grid grid-cols-12 gap-10">
-                <div class="col-span-12 xl:col-span-6">
-                    <div class="section-title-wrapper">
-                        <h2 class="section-title text-5xl font-bold leading-[117%] mb-4">
-                            Frequently <br> Asked Questions
-                        </h2>
-                        <p class="text-lg font-normal leading-[144%] text-[#667085] mb-6">
-                            Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free,
-                            personalized 30-minute onboarding call to get you up and running as soon as possible.
-                        </p>
-                        <div class="common-btn">
-                            <button
-                                class="text-base font-medium text-primary h-12 w-[141px] flex items-center justify-center gap-4">Let's
-                                Talk
-                                <img src="./assets/img/icons/arrow-left.svg" alt="">
-                                <span class="border-anim"></span>
-                            </button>
-                        </div>
-                        <div class="w-full ml-auto">
-                            <img class="ml-auto mr-[56px] mt-[-25px]" src="./assets/img/icons/faq-icon.svg" alt="">
+        <section class="rs-faq-area relative py-[140px] overflow-hidden">
+            <div class="max-w-2lg mx-auto px-4">
+                <div class="grid grid-cols-12 gap-10">
+                    <div class="col-span-12 xl:col-span-6">
+                        <div class="section-title-wrapper">
+                            <h2 class="section-title text-5xl font-bold leading-[117%] mb-4">
+                                Frequently <br> Asked Questions
+                            </h2>
+                            <p class="text-lg font-normal leading-[144%] text-[#667085] mb-6">
+                                Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free,
+                                personalized 30-minute onboarding call to get you up and running as soon as possible.
+                            </p>
+                            <div class="common-btn">
+                                <button
+                                    class="text-base font-medium text-primary h-12 w-[141px] flex items-center justify-center gap-4">Let's
+                                    Talk
+                                    <img src="./assets/img/icons/arrow-left.svg" alt="">
+                                    <span class="border-anim"></span>
+                                </button>
+                            </div>
+                            <div class="w-full ml-auto">
+                                <img class="ml-auto mr-[56px] mt-[-25px]" src="./assets/img/icons/faq-icon.svg" alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-span-12 xl:col-span-6">
-                    <div class="w-full flex items-center justify-center">
-                        <div id="accordion" data-accordion="single" class="space-y-3">
-
-                            <!-- FAQ 1 -->
-                            <div
-                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
-                                <div>
-                                    <button type="button"
-                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
-                                        aria-expanded="false" aria-controls="acc-panel-1" id="acc-trigger-1">
-                                        <div class="flex-1 flex justify-between items-center">
-                                            <p class="font-semibold text-2xl">What is ReadyClassify?</p>
-                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
-                                                class="transition-all duration-300 rotate-180">
-                                        </div>
-                                    </button>
-                                    <div id="acc-panel-1" role="region" aria-labelledby="acc-trigger-1"
-                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-                                        <div class="overflow-hidden">
-                                            <p
-                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
-                                                <b class="text-white">ReadyClassify</b> is a full-featured classified
-                                                app that allows users to buy, sell, and rent
-                                                products or services locally or worldwide. It includes a flutter mobile
-                                                app for
-                                                Android/iOS, User Webstie and a powerful admin panel for management.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- FAQ 2 -->
-                            <div
-                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
-                                <div>
-                                    <button type="button"
-                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
-                                        aria-expanded="false" aria-controls="acc-panel-2" id="acc-trigger-2">
-                                        <div class="flex-1 flex justify-between items-center">
-                                            <p class="font-semibold text-2xl">Who is behind ReadyClassify?</p>
-                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
-                                                class="transition-all duration-300 rotate-180">
-                                        </div>
-                                    </button>
-                                    <div id="acc-panel-2"
-                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-                                        <div class="overflow-hidden">
-                                            <p
-                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
-                                                <b class="text-white">RazinSoft,</b> a trusted software company,
-                                                developed ReadyClassify. We focus on building
-                                                reliable, user-friendly apps and platforms for businesses and
-                                                individuals.
-                                            </p>
+                    <div class="col-span-12 xl:col-span-6">
+                        <div class="w-full flex items-center justify-center">
+                            <div id="accordion" data-accordion="single" class="space-y-3">
+    
+                                <!-- FAQ 1 -->
+                                <div
+                                    class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                    <div>
+                                        <button type="button"
+                                            class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                            aria-expanded="false" aria-controls="acc-panel-1" id="acc-trigger-1">
+                                            <div class="flex-1 flex justify-between items-center">
+                                                <p class="font-semibold text-2xl">What is ReadyClassify?</p>
+                                                <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                    class="transition-all duration-300 rotate-180">
+                                            </div>
+                                        </button>
+                                        <div id="acc-panel-1" role="region" aria-labelledby="acc-trigger-1"
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                            <div class="overflow-hidden">
+                                                <p
+                                                    class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                    <b class="text-white">ReadyClassify</b> is a full-featured classified
+                                                    app that allows users to buy, sell, and rent
+                                                    products or services locally or worldwide. It includes a flutter mobile
+                                                    app for
+                                                    Android/iOS, User Webstie and a powerful admin panel for management.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- FAQ 3 -->
-                            <div
-                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
-                                <div>
-                                    <button type="button"
-                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
-                                        aria-expanded="false" aria-controls="acc-panel-3" id="acc-trigger-3">
-                                        <div class="flex-1 flex justify-between items-center">
-                                            <p class="font-semibold text-2xl">Can I use ReadyClassify for my own
-                                                marketplace?</p>
-                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
-                                                class="transition-all duration-300 rotate-180">
-                                        </div>
-                                    </button>
-                                    <div id="acc-panel-3"
-                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-                                        <div class="overflow-hidden">
-                                            <p
-                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
-                                                Yes! ReadyClassify is fully customizable. You can run your own
-                                                marketplace, manage
-                                                categories, set membership plans, and control user interactions via the
-                                                admin panel.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- FAQ 4 -->
-                            <div
-                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
-                                <div>
-                                    <button type="button"
-                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
-                                        aria-expanded="false" aria-controls="acc-panel-4" id="acc-trigger-4">
-                                        <div class="flex-1 flex justify-between items-center">
-                                            <p class="font-semibold text-2xl">Is it safe to use?</p>
-                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
-                                                class="transition-all duration-300 rotate-180">
-                                        </div>
-                                    </button>
-                                    <div id="acc-panel-4"
-                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-                                        <div class="overflow-hidden">
-                                            <p
-                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
-                                                Absolutely. ReadyClassify includes verified user accounts, moderation
-                                                tools, and secure
-                                                payment options to ensure a safe environment for both buyers and
-                                                sellers.
-                                            </p>
+    
+                                <!-- FAQ 2 -->
+                                <div
+                                    class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                    <div>
+                                        <button type="button"
+                                            class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                            aria-expanded="false" aria-controls="acc-panel-2" id="acc-trigger-2">
+                                            <div class="flex-1 flex justify-between items-center">
+                                                <p class="font-semibold text-2xl">Who is behind ReadyClassify?</p>
+                                                <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                    class="transition-all duration-300 rotate-180">
+                                            </div>
+                                        </button>
+                                        <div id="acc-panel-2"
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                            <div class="overflow-hidden">
+                                                <p
+                                                    class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                    <b class="text-white">RazinSoft,</b> a trusted software company,
+                                                    developed ReadyClassify. We focus on building
+                                                    reliable, user-friendly apps and platforms for businesses and
+                                                    individuals.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- FAQ 5 -->
-                            <div
-                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
-                                <div>
-                                    <button type="button"
-                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
-                                        aria-expanded="false" aria-controls="acc-panel-5" id="acc-trigger-5">
-                                        <div class="flex-1 flex justify-between items-center">
-                                            <p class="font-semibold text-2xl">What platforms are supported?</p>
-                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
-                                                class="transition-all duration-300 rotate-180">
-                                        </div>
-                                    </button>
-                                    <div id="acc-panel-5"
-                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-                                        <div class="overflow-hidden">
-                                            <p
-                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
-                                                The app supports Responsive <b class="text-white">Website</b> and
-                                                flutters Native <b class="text-white">Android and iOS.</b>
-                                                The admin panel is web-based and can be accessed from any modern
-                                                browser.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- FAQ 6 -->
-                            <div
-                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
-                                <div>
-                                    <button type="button"
-                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
-                                        aria-expanded="false" aria-controls="acc-panel-6" id="acc-trigger-6">
-                                        <div class="flex-1 flex justify-between items-center">
-                                            <p class="font-semibold text-2xl">Does it include real-time chat?</p>
-                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
-                                                class="transition-all duration-300 rotate-180">
-                                        </div>
-                                    </button>
-                                    <div id="acc-panel-6"
-                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-                                        <div class="overflow-hidden">
-                                            <p
-                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
-                                                Yes, buyers and sellers can communicate instantly via the in-app chat
-                                                system, complete
-                                                with notifications and read receipts.
-                                            </p>
+    
+                                <!-- FAQ 3 -->
+                                <div
+                                    class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                    <div>
+                                        <button type="button"
+                                            class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                            aria-expanded="false" aria-controls="acc-panel-3" id="acc-trigger-3">
+                                            <div class="flex-1 flex justify-between items-center">
+                                                <p class="font-semibold text-2xl">Can I use ReadyClassify for my own
+                                                    marketplace?</p>
+                                                <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                    class="transition-all duration-300 rotate-180">
+                                            </div>
+                                        </button>
+                                        <div id="acc-panel-3"
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                            <div class="overflow-hidden">
+                                                <p
+                                                    class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                    Yes! ReadyClassify is fully customizable. You can run your own
+                                                    marketplace, manage
+                                                    categories, set membership plans, and control user interactions via the
+                                                    admin panel.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- FAQ 7 -->
-                            <div
-                                class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
-                                <div>
-                                    <button type="button"
-                                        class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
-                                        aria-expanded="false" aria-controls="acc-panel-7" id="acc-trigger-7">
-                                        <div class="flex-1 flex justify-between items-center">
-                                            <p class="font-semibold text-2xl">Can I customize the app?</p>
-                                            <img src="./assets/img/icons/chevron-down.svg" alt=""
-                                                class="transition-all duration-300 rotate-180">
-                                        </div>
-                                    </button>
-                                    <div id="acc-panel-7"
-                                        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-                                        <div class="overflow-hidden">
-                                            <p
-                                                class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
-                                                Yes, you can customize the app’s look and functionality.
-                                                Note: Codecanyon support includes bug fixes and setup help as per
-                                                Codecanyon license.
-                                                Custom feature development is separate. Please contact our support or
-                                                book a meeting
-                                                for your custom requirements.
-                                            </p>
+    
+                                <!-- FAQ 4 -->
+                                <div
+                                    class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                    <div>
+                                        <button type="button"
+                                            class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                            aria-expanded="false" aria-controls="acc-panel-4" id="acc-trigger-4">
+                                            <div class="flex-1 flex justify-between items-center">
+                                                <p class="font-semibold text-2xl">Is it safe to use?</p>
+                                                <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                    class="transition-all duration-300 rotate-180">
+                                            </div>
+                                        </button>
+                                        <div id="acc-panel-4"
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                            <div class="overflow-hidden">
+                                                <p
+                                                    class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                    Absolutely. ReadyClassify includes verified user accounts, moderation
+                                                    tools, and secure
+                                                    payment options to ensure a safe environment for both buyers and
+                                                    sellers.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+    
+                                <!-- FAQ 5 -->
+                                <div
+                                    class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                    <div>
+                                        <button type="button"
+                                            class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                            aria-expanded="false" aria-controls="acc-panel-5" id="acc-trigger-5">
+                                            <div class="flex-1 flex justify-between items-center">
+                                                <p class="font-semibold text-2xl">What platforms are supported?</p>
+                                                <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                    class="transition-all duration-300 rotate-180">
+                                            </div>
+                                        </button>
+                                        <div id="acc-panel-5"
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                            <div class="overflow-hidden">
+                                                <p
+                                                    class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                    The app supports Responsive <b class="text-white">Website</b> and
+                                                    flutters Native <b class="text-white">Android and iOS.</b>
+                                                    The admin panel is web-based and can be accessed from any modern
+                                                    browser.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- FAQ 6 -->
+                                <div
+                                    class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                    <div>
+                                        <button type="button"
+                                            class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                            aria-expanded="false" aria-controls="acc-panel-6" id="acc-trigger-6">
+                                            <div class="flex-1 flex justify-between items-center">
+                                                <p class="font-semibold text-2xl">Does it include real-time chat?</p>
+                                                <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                    class="transition-all duration-300 rotate-180">
+                                            </div>
+                                        </button>
+                                        <div id="acc-panel-6"
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                            <div class="overflow-hidden">
+                                                <p
+                                                    class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                    Yes, buyers and sellers can communicate instantly via the in-app chat
+                                                    system, complete
+                                                    with notifications and read receipts.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- FAQ 7 -->
+                                <div
+                                    class="accordion-item shadow-[0_12px_48px_rgba(0,0,0,0.05)] bg-[rgba(255,255,255,0.08)] rounded-xl">
+                                    <div>
+                                        <button type="button"
+                                            class="w-full flex items-center justify-between gap-3 text-left h-[80px] px-6 rounded-xl"
+                                            aria-expanded="false" aria-controls="acc-panel-7" id="acc-trigger-7">
+                                            <div class="flex-1 flex justify-between items-center">
+                                                <p class="font-semibold text-2xl">Can I customize the app?</p>
+                                                <img src="./assets/img/icons/chevron-down.svg" alt=""
+                                                    class="transition-all duration-300 rotate-180">
+                                            </div>
+                                        </button>
+                                        <div id="acc-panel-7"
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+                                            <div class="overflow-hidden">
+                                                <p
+                                                    class="text-base font-normal leading-[150%] pt-0 px-6 pb-6 text-[rgba(255,255,255,0.6)]">
+                                                    Yes, you can customize the app’s look and functionality.
+                                                    Note: Codecanyon support includes bug fixes and setup help as per
+                                                    Codecanyon license.
+                                                    Custom feature development is separate. Please contact our support or
+                                                    book a meeting
+                                                    for your custom requirements.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
                             </div>
-
                         </div>
                     </div>
                 </div>

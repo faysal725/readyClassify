@@ -10,6 +10,10 @@
     background: #4c1313;
     z-index: -1;
 }
+.rs-customization-breadcrumb::before{
+    bottom: 0 !important;
+    top: auto;
+}
 
 .rs-about-us-list li strong::before {
     position: absolute;
