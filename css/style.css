@@ -545,6 +545,21 @@ html {
 
 }
 
+.rs-technology-icons-bg {
+	width: 750px;
+	height: 750px;
+}
+
+.rs-technology-icons-bg-2 {
+	width: 550px;
+	height: 550px;
+}
+
+.rs-technology-icons-bg-3 {
+	width: 350px;
+	height: 350px;
+}
+
 .rs-technology-icons-bg-2,
 .rs-technology-icons-bg {
 	position: relative;
@@ -1337,7 +1352,7 @@ html {
 	content: '';
 	width: 130px;
 	height: 130px;
-	filter: blur(150px);
+	filter: blur(250px);
 	border-radius: 100%;
 	background: #80921b;
 	z-index: -1;
@@ -1384,4 +1399,15 @@ a:hover .border-anim-2 {
 	color: var(--gray-500);
 	transform: translateY(-5px);
 	color: transparent;
+}
+
+
+.rs-header-sticky {
+	position: sticky !important;
+	top: 0;
+	left: 0;
+	background: var(--black);
+	z-index: 99;
+	right: 0;
+	transition: .2s linear;
 }

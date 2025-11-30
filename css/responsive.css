@@ -42,6 +42,10 @@
         height: 140px;
     }
 
+    .swiper-box {
+        height: 285px !important;
+    }
+
     .customization-box {
         width: 420px !important;
         flex: 0 0 auto !important;
@@ -345,7 +349,8 @@
     .rs-collaborate-thumb {
         width: 100%;
     }
-    .rs-collaborate-thumb > img{
+
+    .rs-collaborate-thumb>img {
         width: 100%;
         height: 400px;
     }
@@ -656,12 +661,14 @@
         gap: 0 !important;
     }
 
+    .rs-tab-btn-2 button,
     .rs-tab-btn button {
         height: 40px !important;
         width: 33% !important;
         font-size: 14px !important;
     }
 
+    .rs-tab-btn-2,
     .rs-tab-btn {
         width: 100% !important;
         padding: 8px !important;
@@ -790,6 +797,34 @@
 }
 
 @media (max-width: 576px) {
+    .rs-technology-icon {
+        background-color: transparent;
+        box-shadow: none;
+        background: none;
+    }
+
+    .rs-technology-icon::before {
+        display: none;
+    }
+
+    .rs-technology-icons-bg {
+        background-color: transparent !important;
+    }
+
+    .rs-technology-icon img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    .rs-technology-icons-bg::before {
+        display: none;
+    }
+
+    .rs-backdrop-blur {
+        backdrop-filter: blur(0);
+    }
+
     .rs-about-info P {
         font-size: 14PX;
     }
@@ -920,6 +955,38 @@
     }
 }
 
+@media (max-width: 400px) {
+    .rs-technology-icons-bg {
+        width: 250px !important;
+        height: 250px !important;
+        border: 1px solid #ffffff10;
+    }
+
+    .rs-technology-icons-bg-2 {
+        width: 175px !important;
+        height: 175px !important;
+        border: 1px solid #ffffff10;
+    }
+
+    .rs-technology-icons-bg-3 {
+        width: 100px !important;
+        height: 100px !important;
+        border: 1px solid #ffffff10;
+    }
+
+    .rs-technology-icon {
+        border: 1px solid transparent !important;
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .rs-technology-icon img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+}
+
 @media (max-width: 390px) {
     .rs-hero-btn {
         flex-wrap: wrap !important;
@@ -979,10 +1046,12 @@
         width: 100%;
     }
 
+    .rs-tab-btn-2 button,
     .rs-tab-btn button {
         width: 100% !important;
     }
 
+    .rs-tab-btn-2,
     .rs-tab-btn {
         flex-wrap: wrap !important;
         margin-bottom: 0;
