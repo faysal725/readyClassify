@@ -1,34 +1,35 @@
-//=========================== common btn =========================== //
-const spans = document.querySelectorAll('.common-btn .border-anim');
-spans.forEach(span => {
-    let angle = 90;
-    function rotate() {
-        angle += 0.4;
-        span.style.background = `linear-gradient(${angle}deg, rgba(0,0,0,0) 0%, #dd5454af 50%, rgba(0,0,0,0) 100%)`;
-        requestAnimationFrame(rotate);
-    }
-    rotate();
-});
+document.addEventListener("DOMContentLoaded", function () {
+    //=========================== common btn =========================== //
+    const spans = document.querySelectorAll('.common-btn .border-anim');
+    spans.forEach(span => {
 
+        span.style.background = `linear-gradient(90deg, rgba(0,0,0,0) 0%, #dd5454af 50%, rgba(0,0,0,0) 100%)`;
 
-//================================= box animation ================================= //
-const boxes = document.querySelectorAll('.rs-price-box-items-2, .rs-service-box-pro');
-let angle = 131;
-function rotateBorder() {
-    angle += 0.15;
-
-    boxes.forEach(box => {
-        box.style.setProperty('--border-angle', angle + 'deg');
+        let angle = 90;
+        function rotate() {
+            angle += 0.4;
+            span.style.background = `linear-gradient(${angle}deg, rgba(0,0,0,0) 0%, #dd5454af 50%, rgba(0,0,0,0) 100%)`;
+            requestAnimationFrame(rotate);
+        }
+        rotate();
     });
 
-    requestAnimationFrame(rotateBorder);
-}
+
+    //================================= box animation ================================= //
+    const boxes = document.querySelectorAll('.rs-price-box-items-2, .rs-service-box-pro');
+    let boxAngle = 131;
+
+    function rotateBorder() {
+        boxAngle += 0.15;
+        boxes.forEach(box => {
+            box.style.setProperty('--border-angle', boxAngle + 'deg');
+        });
+        requestAnimationFrame(rotateBorder);
+    }
+    rotateBorder();
 
 
-//================================= submenu border ================================= //
-rotateBorder();
-document.addEventListener("DOMContentLoaded", function () {
-
+    //================================= submenu border ================================= //
     const submenuLinks = document.querySelectorAll('.rs-submenu li a');
     let borderAngle = 0;
 
@@ -43,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     rotateLinkBorder();
+
 });
+
 
 //=============================== offcanvas =============================== //
 const offcanvasBtn = document.querySelector('.rs-offcanvas-btn');

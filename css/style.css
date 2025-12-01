@@ -127,7 +127,7 @@ html {
 	border-radius: 8px;
 	pointer-events: none;
 	z-index: 1;
-	background: linear-gradient(calc(var(--border-angle, 0deg)),
+	background: linear-gradient(calc(var(--border-angle, 90deg)),
 			#DD5454 -16%,
 			rgba(0, 0, 0, 0.5) 50%,
 			#A23939 107%);
