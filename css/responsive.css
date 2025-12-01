@@ -410,7 +410,7 @@
 
     .offcanvas-show-btn {
         display: block !important;
-        width: 48px !important;
+        width: 40px !important;
     }
 
     .rs-hero-content .sub-title {
@@ -803,6 +803,10 @@
         background: none;
     }
 
+    .rs-header-logo a img{
+        width: 200px;
+    }
+
     .rs-technology-icon::before {
         display: none;
     }
@@ -990,6 +994,7 @@
 @media (max-width: 390px) {
     .rs-hero-btn {
         flex-wrap: wrap !important;
+        gap: 12px !important;
     }
 
     .rs-hero-btn .common-btn-2,

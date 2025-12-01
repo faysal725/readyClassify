@@ -13,7 +13,7 @@
     overflow: hidden;
     cursor: pointer;
     z-index: 999;
-    border: 1px solid #ffffff2a;
+    border: 1px solid #ffffff50;
     transition: 0.5s ease all;
     backdrop-filter: blur(30px);
 }

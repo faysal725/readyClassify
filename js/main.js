@@ -30,20 +30,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     //================================= submenu border ================================= //
-    const submenuLinks = document.querySelectorAll('.rs-submenu li a');
-    let borderAngle = 0;
+    // const submenuLinks = document.querySelectorAll('.rs-submenu li a');
+    // let borderAngle = 0;
 
-    function rotateLinkBorder() {
-        borderAngle += 0.7;
+    // function rotateLinkBorder() {
+    //     borderAngle += 0.7;
 
-        submenuLinks.forEach(link => {
-            link.style.setProperty('--border-angle', borderAngle + 'deg');
-        });
+    //     submenuLinks.forEach(link => {
+    //         link.style.setProperty('--border-angle', borderAngle + 'deg');
+    //     });
 
-        requestAnimationFrame(rotateLinkBorder);
-    }
+    //     requestAnimationFrame(rotateLinkBorder);
+    // }
 
-    rotateLinkBorder();
+    // rotateLinkBorder();
 
 });
 
