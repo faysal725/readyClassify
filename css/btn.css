@@ -13,6 +13,15 @@
 	z-index: 2;
 	overflow: hidden;
 }
+
+/* fix: click korle white hoye jaito */
+.common-btn button:active,
+.common-btn button:focus {
+	background: inherit !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
 .common-btn a {
 	background: linear-gradient(228deg, rgba(255 255 255 / 18%) 0%, rgba(221, 84, 84, 0.32) 50.48%, rgba(255, 254, 254, 0.11) 100%);
 	border-radius: 8px;
@@ -22,6 +31,15 @@
 	z-index: 2;
 	overflow: hidden;
 }
+
+/* fix: anchor click highlight remove */
+.common-btn a:active,
+.common-btn a:focus {
+	background: inherit !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
 .border-anim {
 	position: absolute;
 	inset: 0;
@@ -33,6 +51,12 @@
 	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
 	-webkit-mask-composite: xor;
 	mask-composite: exclude;
+}
+
+/* fix: span click-effect remove */
+.border-anim:active,
+.border-anim:focus {
+	background: inherit !important;
 }
 
 .common-btn-2 button {
